@@ -1,5 +1,5 @@
 <?php
-
+// 위젯은 통계   
 namespace WP_SMS\Admin\Widget\Widgets;
 
 use WP_SMS\Admin\Widget\AbstractWidget;

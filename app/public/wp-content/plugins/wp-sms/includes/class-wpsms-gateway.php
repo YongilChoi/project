@@ -90,6 +90,7 @@ class Gateway
             'sinch'          => 'sinch.com',
             'linkmobility'   => 'linkmobility.no',
             'smspoh'         => 'smspoh.com',
+            'kakao_allim'    => 'directsend.co.kr'
         ),
         'united states'  => array(
             'telnyx' => 'telnyx.com',
@@ -156,6 +157,9 @@ class Gateway
         ),
         'mexico'         => array(
             'smsmasivos' => 'smsmasivos.com.mx',
+        ),
+        'korea'         => array(
+            'smsmasivos' => 'smsmasivos.com.mx', //added later... 
         ),
     );
 

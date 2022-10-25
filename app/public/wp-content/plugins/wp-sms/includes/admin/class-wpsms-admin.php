@@ -127,7 +127,7 @@ class Admin
         $wp_admin_bar->add_menu(array(
             'id'     => 'wp-send-sms',
             'parent' => 'new-content',
-            'title'  => __('SMS', 'wp-sms'),
+            'title'  => __('SMS', 'wp-sms'),   /* yichoi */ 
             'href'   => WP_SMS_ADMIN_URL . '/admin.php?page=wp-sms'
         ));
     }
@@ -203,7 +203,7 @@ class Admin
     /**
      * Callback send sms page.
      */
-    public function send_sms_callback()
+    public function send_sms_callback()  /* yichoi */ 
     {
         $page = new SMS_Send();
         $page->render_page();
