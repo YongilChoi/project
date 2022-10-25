@@ -175,7 +175,8 @@ class Admin
         add_submenu_page('wp-sms', __('Add-Ons', 'wp-sms'), sprintf(__('%sAdd-Ons%s', 'wp-sms'), '<span style="color:#FF7600">', '</span>'), 'manage_options', 'wp-sms-add-ons', array($this, 'add_ons_callback'), 8);
 
         // added by yichoi to test add submenu : 
-        
+        // test for smartgit.. this hear. 
+
         add_submenu_page('wp-sms', __('Add-Ons1', 'wp-sms'), sprintf(__('%sAdd-Ons1%s', 'wp-sms'), '<span style="color:#FF7600">', '</span>'), 'manage_options', 'wp-sms-add-ons1', array($this, 'add_ons_callback'), 9);
         // Add styles to menu pages
         foreach ($hook_suffix as $menu => $hook) {
