@@ -102,17 +102,9 @@ class Subscribers_List_Table extends \WP_List_Table
         );
     }
 
+    // 데이터 가져오는 칼럼의 정의 yichoi 
     public function get_columns()
     {
-        // 현재 데이타베이스 테이블 상태 
-            //         열	형	주석
-            // ID	int(10) 자동 증가	
-            // date	datetime NULL	
-            // name	varchar(250) NULL	
-            // mobile	varchar(20)	
-            // status	tinyint(1) NULL	
-            // activate_key	int(11) NULL	
-            // group_ID	int(5) NULL	
         // $columns = array(
         //     'cb'       => '<input type="checkbox" />', //Render a checkbox instead of text
         //     'name'     => __('Name', 'wp-sms'),
@@ -121,33 +113,15 @@ class Subscribers_List_Table extends \WP_List_Table
         //     'date'     => __('Date', 'wp-sms'),
         //     'status'   => __('Status', 'wp-sms'),
         // );
-        // -------------------------------
-// 새로 추가할 테이블 레코드는 ? 
-            //         열	형	주석
-            // ID	int(10) 자동 증가	
-            // date	datetime NULL	
-            // name	varchar(250) NULL	
-            // mobile	varchar(20)	
-            // status	tinyint(1) NULL	
-            // activate_key	int(11) NULL	
-            // group_ID	int(5) NULL	
-            // No   
-            // UserID
-            //    Email
-            //    CompanyName
-            //    CEO 
-            //    Tel
-
-
 
         $columns = array(
             'cb'       => '<input type="checkbox" />', //Render a checkbox instead of text
-            'Number'     => __('Number', 'wp-sms'),
-            'ID'         => __('ID', 'wp-sms'),
-            'Email'      => __('Email', 'wp-sms'),
-            'CompanyName'=> __('CompnayName', 'wp-sms'),
-            'CEO'        => __('CEO', 'wp-sms'),
-            'Tel'        => __('Tel', 'wp-sms'),
+            'Number'     => __('Name', 'wp-sms'),
+            'ID'         => __('Mobile', 'wp-sms'),
+            'Email'      => __('Group', 'wp-sms'),
+            'CompanyName'=> __('Date', 'wp-sms'),
+            'CEO'        => __('Status', 'wp-sms'),
+            'Tel'        => __('Status', 'wp-sms'),
         );
 
         if (Option::getOption('newsletter_form_verify')) {
@@ -160,12 +134,12 @@ class Subscribers_List_Table extends \WP_List_Table
     public function get_sortable_columns()
     {
         $sortable_columns = array(
-            'Number'       => array('Number', true),     //true means it's already sorted
-            'ID'     => array('ID', false),     //true means it's already sorted
-            'Email'   => array('Email', false),     //true means it's already sorted
-            'CompanyName' => array('CompanyName', false),     //true means it's already sorted
-            'CEO'     => array('CEO', false),   //true means it's already sorted
-            'Tel'   => array('Tel', false), //true means it's already sorted
+            'ID'       => array('ID', true),     //true means it's already sorted
+            'name'     => array('name', false),     //true means it's already sorted
+            'mobile'   => array('mobile', false),     //true means it's already sorted
+            'group_ID' => array('group_ID', false),     //true means it's already sorted
+            'date'     => array('date', false),   //true means it's already sorted
+            'status'   => array('status', false), //true means it's already sorted
         );
 
         if (Option::getOption('newsletter_form_verify')) {

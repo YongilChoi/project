@@ -541,6 +541,7 @@ class Gateway
                 'default' => __('Please select your gateway', 'wp-sms'),
             ),
             'global'               => array(
+                'directsend'       => 'directsend.co.kr', 
                 'reachinteractive' => 'reach-interactive.com',
                 'octopush'         => 'octopush.com',
                 'experttexting'    => 'experttexting.com',
@@ -827,6 +828,9 @@ class Gateway
             ),
             'kenya'                => array(
                 'hostpinnacle' => 'hostpinnacle.co.ke',
+            ),
+            'korea'                => array(
+                'directsend' => 'directsend.co.kr',
             ),
         );
 
