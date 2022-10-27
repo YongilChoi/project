@@ -1,1 +1,11 @@
 [26-Oct-2022 10:01:23 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\subscribers\class-wpsms-subscribers-table.php on line 124
+[27-Oct-2022 02:48:39 UTC] PHP Warning:  usort() expects parameter 1 to be array, null given in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\subscribers\class-wpsms-subscribers-table.php on line 336
+[27-Oct-2022 02:48:39 UTC] PHP Stack trace:
+[27-Oct-2022 02:48:39 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Oct-2022 02:48:39 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Oct-2022 02:48:39 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:476
+[27-Oct-2022 02:48:39 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:331
+[27-Oct-2022 02:48:39 UTC] PHP   5. WP_SMS\Admin->subscribers_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:307
+[27-Oct-2022 02:48:39 UTC] PHP   6. WP_SMS\Subscribers->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:239
+[27-Oct-2022 02:48:39 UTC] PHP   7. WP_SMS\Subscribers_List_Table->prepare_items() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\subscribers\class-wpsms-subscribers.php:57
+[27-Oct-2022 02:48:39 UTC] PHP   8. usort() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\subscribers\class-wpsms-subscribers-table.php:336

@@ -77,33 +77,46 @@ class Newsletter {
 	/**
 	 * Add Subscriber
 	 *
-	 * @param $name
-	 * @param $mobile
-	 * @param string $group_id
-	 * @param string $status
-	 * @param null $key
+	 * @param $name  -> NO
+	 * @param $mobile  -> ID
+	 * @param string $group_id   -> Email
+	 * @param string $status   -> CEO
+	 * @param null $key    -> Tel 
 	 *
 	 * @return array
 	 */
-	public static function addSubscriber( $name, $mobile, $group_id = '', $status = '1', $key = null ) {
+	public static function addSubscriber( $NO, $ID, $Email = '', $CEO = '', $Tel = '' ) {
 		global $wpdb;
 
 		// Check mobile validity
-		$validate = Helper::checkMobileNumberValidity( $mobile, false, true, $group_id );
+		$validate = Helper::checkMobileNumberValidity( $Tel, false, true, $group_id );
 
 		if ( is_wp_error( $validate ) ) {
 			return array( 'result' => 'error', 'message' => $validate->get_error_message() );
 		}
 
 		$result = $wpdb->insert(
-			$wpdb->prefix . "sms_subscribes",
+			$wpdb->prefix . "sms_addressbook",
 			array(
 				'date'         => WP_SMS_CURRENT_DATE,
+				'NO' 			=> $NO, 
+				'ID'			=> $ID, 
+				'Email' 		=> $Email, 
+				'CEO'			=>$CEO,
+				'Tel'			=> $Tel, 
 				'name'         => $name,
 				'mobile'       => $mobile,
 				'status'       => $status,
 				'activate_key' => $key,
 				'group_ID'     => $group_id,
+
+
+
+
+
+
+
+				
 			)
 		);
 

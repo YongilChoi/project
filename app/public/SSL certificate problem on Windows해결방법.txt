@@ -1,0 +1,32 @@
+SSL certificate problem on Windows
+
+
+C:\Users\SIMON\AppData\Local\Programs\Local\Local.exe
+
+php.ini 위치는 ? 
+
+Local> 콘솔 .. > php version .. > update 옆에 느낌기호 클릭. 하면 , 아래 위치 나옴. 
+
+
+C:\Users\SIMON\AppData\Roaming\Local\run\vSrqCqPwM\conf\php\php.ini
+
+C:\Users\SIMON\Local Sites\cacert.pem
+
+
+
+openssl.cafile="C:\Users\SIMON\Local Sites\cacert.pem"
+
+- refer to : 
+
+elliottmangham
+Dec '20
+I have great news! I was able to fix the issue on a per-site basis, although going forward it would be good to know how it can be fixed sitewide.
+
+I added the following line to the bottom of my \site-dir\conf\php\php.ini.hbs file and restarted the site:
+
+openssl.cafile=C:\Program Files\Common Files\SSL\cert.pem
+Obviously, this is based on the cert.pem (previously cacert.pem file you suggested) in the directory.
+
+Based on this are you able to tell me how I can add that line to some kind of global PHP Ini file for my Local sites?
+
+Thank you.

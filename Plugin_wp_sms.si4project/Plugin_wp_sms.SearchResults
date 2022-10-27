@@ -1,0 +1,4 @@
+---- Add Subscriber Matches (5 in 3 files) ----
+addressbook.php (app\public\wp-content\plugins\wp-sms\includes\admin\send) line 13 :             <a name="<?php _e('Add Subscriber', 'wp-sms'); ?>" href="admin.php?page=wp-sms-subscribers#TB_inline?&width=400&height=250&inlineId=add-subscriber" class="thickbox button"><span class="dashicons dashicons-admin-users"></span> <?php _e('Add Subscriber', 'wp-sms'); ?></a>
+Newsletter in class-wpsms-newsletter.php (app\public\wp-content\plugins\wp-sms\includes) : 	 * Add Subscriber
+subscribers.php (app\public\wp-content\plugins\wp-sms\includes\admin\subscribers) line 14 :             <a name="<?php _e('Add Subscriber', 'wp-sms'); ?>" href="admin.php?page=wp-sms-subscribers#TB_inline?&width=400&height=250&inlineId=add-subscriber" class="thickbox button"><span class="dashicons dashicons-admin-users"></span> <?php _e('Add Subscriber', 'wp-sms'); ?></a>

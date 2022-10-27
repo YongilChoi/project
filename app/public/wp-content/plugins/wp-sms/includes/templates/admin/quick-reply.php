@@ -30,6 +30,7 @@
     </form>
     <div class="quick-reply-submit">
         <p class="submit" style="padding: 0;">
+ 
             <input type="submit" class="button-primary" name="SendSMS" value="<?php _e('Reply', 'wp-sms'); ?>"/>
         </p>
     </div>

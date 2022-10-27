@@ -116,7 +116,7 @@ class Subscribers_List_Table extends \WP_List_Table
 
         $columns = array(
             'cb'       => '<input type="checkbox" />', //Render a checkbox instead of text
-            'Number'     => __('Name', 'wp-sms'),
+            'NO'     => __('NO', 'wp-sms'),
             'ID'         => __('Mobile', 'wp-sms'),
             'Email'      => __('Group', 'wp-sms'),
             'CompanyName'=> __('Date', 'wp-sms'),

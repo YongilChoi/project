@@ -1,0 +1,7 @@
+# ignore
+
+Plugin_wp_sms.si4project/
+
+conf/
+
+logs/
