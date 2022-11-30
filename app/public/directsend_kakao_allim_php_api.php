@@ -58,9 +58,9 @@ $user_template_no = 3;            //필수입력 (하단 259 라인 API 이용�
 
 //수신자 정보 추가 - 필수 입력(주소록 미사용시), 치환문자 미사용시 치환문자 데이터를 입력하지 않고 사용할수 있습니다.
 //치환문자 미사용시 "{"mobile":"01000000001"} 번호만 입력 해주시기 바랍니다.
-$receiver = '{"name":"강길동","mobile":"수신자번호","note1":"다이렉트센드 1","note2":"다이렉트센드 2","note3":"다이렉트센드 3","note4":"다이렉트센드 4","note5":"다이렉트센드 5"}'
-    .',{"name":"홍길동","mobile":"","note1":"다이렉트센드 2","note2":"다이렉트센드 3","note3":"다이렉트센드 4","note4":"다이렉트센드 5","note5":"다이렉트센드 6"}'
-    .',{"name":"","mobile":"수신자번호","note1":"다이렉트센드 3","note2":"다이렉트센드 4","note3":"다이렉트센드 5","note4":"다이렉트센드 6","note5":"다이렉트센드 7"}'
+$receiver = '{"name":"허지영","mobile":"01074769732","note1":"다이렉트센드 1","note2":"다이렉트센드 2","note3":"다이렉트센드 3","note4":"다이렉트센드 4","note5":"다이렉트센드 5"}'
+    .',{"name":"최용일","mobile":"01097694876","note1":"다이렉트센드 2","note2":"다이렉트센드 3","note3":"다이렉트센드 4","note4":"다이렉트센드 5","note5":"다이렉트센드 6"}'
+   
 ;
 
 $receiver = '['.$receiver.']';
@@ -275,29 +275,29 @@ curl_close ($ch);
 
 /* 여기서부터 수정해주시기 바랍니다. */
 
-//$username = "DirectSend id";                //필수입력
-//$key = "DirectSend 발급 api key";           //필수입력
+$username = "sgis01";                //필수입력
+$key = "2jY4VeF3LC06JBq";           //필수입력
 
 /* 여기까지 수정해주시기 바랍니다. */
 
-//$postvars = '{"username":"'.$username.'","key":"'.$key.'","template_type":"3"}';        //JSON 데이터
+$postvars = '{"username":"'.$username.'","key":"'.$key.'","template_type":"3"}';        //JSON 데이터
 
-//$url = "https://directsend.co.kr/index.php/api_kakao/template/get/list";        //URL
+$url = "https://directsend.co.kr/index.php/api_kakao/template/get/list";        //URL
 
-//$ch = curl_init();
-//$headers = array("cache-control: no-cache","content-type: application/json; charset=utf-8");      //헤더정보
+$ch = curl_init();
+$headers = array("cache-control: no-cache","content-type: application/json; charset=utf-8");      //헤더정보
 
-//curl_setopt($ch,CURLOPT_URL, $url);
-//curl_setopt($ch,CURLOPT_POST, true);
-//curl_setopt($ch,CURLOPT_POSTFIELDS, $postvars);
-//curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
-//curl_setopt($ch,CURLOPT_CONNECTTIMEOUT ,3);
-//curl_setopt($ch,CURLOPT_TIMEOUT, 20);
-//curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-//$response = curl_exec($ch);
+curl_setopt($ch,CURLOPT_URL, $url);
+curl_setopt($ch,CURLOPT_POST, true);
+curl_setopt($ch,CURLOPT_POSTFIELDS, $postvars);
+curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch,CURLOPT_CONNECTTIMEOUT ,3);
+curl_setopt($ch,CURLOPT_TIMEOUT, 20);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+$response = curl_exec($ch);
 
-//print_r($response);
-//curl_close ($ch);
+print_r($response);
+curl_close ($ch);
 
 /*
  * response 성공 json 데이터 양식

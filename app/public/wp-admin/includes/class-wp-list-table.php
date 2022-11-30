@@ -1265,6 +1265,7 @@ class WP_List_Table {
 	 *
 	 * @since 3.1.0
 	 */
+	//yichoi reviewed 
 	public function display() {
 		$singular = $this->_args['singular'];
 
