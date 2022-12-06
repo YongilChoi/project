@@ -1,0 +1,477 @@
+Commands                                  :  Description
+
+Application: About Source Insight...      :  Displays copyright and version information.
+Application: Check for Updates...         :  Checks for new Source Insight updates.
+Application: Create Bookmarks from Relat  :  Creates bookmarks from all items in the relation window.
+Application: Deactivate License...        :  Deactivates your Source Insight license on this machine.
+Application: Exit                         :  Exits Source Insight.
+Application: Exit and Suspend             :  Exits Source Insight without saving files, but can recover changes again later.
+Application: Exit Windows                 :  Exits Source Insight and logs the current Microsoft Windows user off.
+Application: Lock Context Window          :  Toggles Context Window locking. Its contents do not change when locked.
+Application: Lock File Compare Window     :  Toggles Comparison Window locking. Its contents do not change when locked.
+Application: Lock Relation Window         :  Toggles Relation Window locking. Its contents do not change when locked.
+Application: Manage License...            :  Lets you activate and deactive your license.
+Application: Mono Font View               :  Toggles simple source code display with mono-spaced font.
+Application: Ordering Information...      :  Shows information on ordering Source Insight.
+Application: Print Relation Window...     :  Prints the relation window.
+Application: Redraw Screen                :  Redraws all windows.
+Application: Refresh Relation Window      :  Recomputes the relation window.
+Application: Restart Windows              :  Restarts Microsoft Windows.
+Application: Run Macro                    :  Starts running a macro instruction at the cusor position.
+Application: Setup Common Projects...     :  Creates common external projects.
+Application: Show in Relation Window      :  Shows the selected symbol in the relation window.
+Application: Source Insight Website       :  Goes to the Source Insight website.
+Application: Touch All Files in Relation  :  Touches all files referenced in the relation window.
+Application: Unimplemented Command        :  Undefined command; possibly from a newer version of Source Insight.
+Build: Build Project                      :  Builds the whole project.
+Build: Clean Build                        :  Performs a 'clean' build of the whole project by rebuilding everything.
+Build: Compile File                       :  Compiles the current file.
+Build: Run Project                        :  Runs the current project program.
+Custom Cmd: Build Project                 :  Custom Command or Editor Macro.
+Custom Cmd: Check In                      :  Custom Command or Editor Macro.
+Custom Cmd: Check Out                     :  Custom Command or Editor Macro.
+Custom Cmd: Clean Build                   :  Custom Command or Editor Macro.
+Custom Cmd: Command Shell                 :  Custom Command or Editor Macro.
+Custom Cmd: Compile File                  :  Custom Command or Editor Macro.
+Custom Cmd: Explore Project Folder        :  Custom Command or Editor Macro.
+Custom Cmd: Preview in Web Browser        :  Custom Command or Editor Macro.
+Custom Cmd: Run Project                   :  Custom Command or Editor Macro.
+Custom Cmd: Search In Folder              :  Custom Command or Editor Macro.
+Custom Cmd: Sort File                     :  Custom Command or Editor Macro.
+Custom Cmd: Sort Selection                :  Custom Command or Editor Macro.
+Custom Cmd: Sync File to Source Control   :  Custom Command or Editor Macro.
+Custom Cmd: Sync to Source Control Proje  :  Custom Command or Editor Macro.
+Custom Cmd: Undo Check Out                :  Custom Command or Editor Macro.
+Custom Cmd: Windows Explorer              :  Custom Command or Editor Macro.
+Edit: Back Tab                            :  Moves the cursor left one tab stop.
+Edit: Backspace                           :  
+Edit: Browser Mode                        :  Toggles browsing-mode on and off.
+Edit: Calculate                           :  Replaces a mathmatical expression with its result.
+Edit: Clip Window Options...              :  Sets options for the Clip Window.
+Edit: Comment Lines                       :  Comments out each line of the selection.
+Edit: Complete Snippet                    :  Completes and expands a code snippet by name.
+Edit: Complete Symbol                     :  Completes typing a symbol name.
+Edit: Copy                                :  Copies selected text to the clipboard.
+Edit: Copy Line                           :  Copies the whole current line to the clipboard.
+Edit: Copy Line Right                     :  Copies to the clipboard text from cursor to end of line.
+Edit: Copy To Clip...                     :  Copies text to a named clip buffer.
+Edit: Cut                                 :  Copies selected text to the clipboard and deletes the text.
+Edit: Cut Line                            :  Cuts the whole line(s) containing the selection.
+Edit: Cut Line Left                       :  Cuts the line from the beginning up to the selection.
+Edit: Cut Line Right                      :  Cuts the line from selection to the end of the line.
+Edit: Cut Selection or Paste              :  Pastes if selection is empty, otherwise Cuts.
+Edit: Cut To Clip...                      :  Cuts text to a named clip buffer.
+Edit: Cut Word                            :  Cuts the word to the right of the selection.
+Edit: Cut Word Left                       :  Cuts the word to the left of the selection.
+Edit: Delete All Clips                    :  Deletes all user defined clips.
+Edit: Delete Character                    :  Delete the character at the cursor.
+Edit: Delete Line                         :  Deletes the whole line(s) containing the selection. Clipboard uneffected.
+Edit: Drag Line Down                      :  Moves selected text down by one line.
+Edit: Drag Line Down More                 :  Moves selected text down by several line.
+Edit: Drag Line Up                        :  Moves selected text up by one line.
+Edit: Drag Line Up More                   :  Moves selected text up by several line.
+Edit: Duplicate                           :  Duplicates the selected text.
+Edit: Enter                               :  
+Edit: Expand Text Variables               :  Processes and replaces text variables in the selected text.
+Edit: Indent Left                         :  Moves all selected lines to the left by one tabstop.
+Edit: Indent Right                        :  Moves all selected lines to the right by one tabstop.
+Edit: Insert ASCII...                     :  Inserts a character by ASCII value.
+Edit: Insert Class Function Prototypes    :  Update class member function declarations.
+Edit: Insert File...                      :  Inserts text from a file.
+Edit: Insert GUID                         :  Insert a globally unique identifier.
+Edit: Insert Line                         :  Inserts a new blank line before the current line.
+Edit: Insert Line Before Next             :  Inserts a new blank line after the current line.
+Edit: Insert New Line                     :  Inserts a line break.
+Edit: Join Lines                          :  Combines the current line with the next.
+Edit: Lowercase                           :  Converts the selected text to lowercase.
+Edit: New Clip...                         :  Creates or Loads a new clip.
+Edit: Normalize End Of Line Characters    :  Converts all end-of-line characters to match the default setting from File Options.
+Edit: Paste                               :  Pastes text from the clipboard.
+Edit: Paste From Clip...                  :  Pastes text from a named clip buffer.
+Edit: Paste Line                          :  Pastes text from the clipboard at the start of the current line.
+Edit: Play Recording                      :  Plays back the recording made with the "Start Recording" command.
+Edit: Redo                                :  Recreates the last editing operation after an Undo command.
+Edit: Redo All                            :  Redoes all edits to the current file.
+Edit: Reform Paragraph                    :  Reformats line breaks in the enclosing paragraph(s).
+Edit: Rename or Move...                   :  Renames a file on disk and in a project.
+Edit: Renumber...                         :  Renumbers numbers found in text.
+Edit: Repeat Typing                       :  Repeats characters that were just typed.
+Edit: Replace...                          :  Replaces text in the current file.
+Edit: Restore Lines                       :  Restores a block of edited lines to their original contents.
+Edit: Simple Tab                          :  Simply inserts a tab and overrides 'Smart Tab' behavior.
+Edit: Slide In Text...                    :  Inserts text on each line of the selection.
+Edit: Smart Rename...                     :  Renames an identifer in all relevant locations.
+Edit: Smart Tab                           :  Inserts tabs or selects the next interesting field on the line.
+Edit: Spaces To Tabs                      :  Converts spaces to equivalent tabs.
+Edit: Start Recording                     :  Starts recording commands and editing operations for later playback.
+Edit: Stop Recording                      :  Stops the command recorder.
+Edit: Tab                                 :  Inserts a tab character.
+Edit: Tabs To Spaces                      :  Converts tabs to equivalent spaces.
+Edit: Toggle Case                         :  Toggles the case of the selected text.
+Edit: Toggle Insert Mode                  :  Toggles Insert vs. Overstrike mode.
+Edit: Trim Whitespace                     :  Removes spaces and tabs from the ends of all lines.
+Edit: Un-Comment Lines                    :  Removes comments from each line of the selection.
+Edit: Undo                                :  Reverses the last editing operation.
+Edit: Undo All                            :  Undoes all edits to the current file.
+Edit: Uppercase                           :  Converts the selected text to uppercase.
+File: Browse Files...                     :  Uses the system Open dialog box to open a file.
+File: Checkpoint                          :  Saves the current file to disk and erases its change history.
+File: Checkpoint All                      :  Saves all open file to disk and erases its change history.
+File: Close                               :  Closes the current file.
+File: Close All                           :  Closes all open files.
+File: Close Other Windows                 :  Closes all windows other than the current window.
+File: Copy File Path                      :  Copies the current file's path to the clipboard.
+File: Delete File...                      :  Deletes a file from disk and from the project.
+File: Export File As HTML...              :  Saves the current file to HTML.
+File: Load File...                        :  Opens or creates a new file in the current project.
+File: Load Workspace...                   :  Loads a session workspace file.
+File: New                                 :  Creates a new open file.
+File: Next File...                        :  Closes the current file and opens another.
+File: Open As Encoding...                 :  Opens a file with a specific encoding or codepage.
+File: Open Backup File...                 :  Opens a backup version of the current file.
+File: Open Last                           :  Opens the last file closed.
+File: Open...                             :  Opens or creates a new file in the current project.
+File: Print...                            :  Prints the current file.
+File: Reload As Encoding...               :  Reloads the current file with a specific encoding or codepage.
+File: Reload File                         :  Reloads the current file from disk, losing ALL changes since saving.
+File: Reload Modified Files               :  Reloads files that have changed outside of the editor.
+File: Restore File                        :  Restores current file to its first opened state, losing ALL changes since opening.
+File: Save                                :  Saves the current file to disk.
+File: Save A Copy...                      :  Saves the current file  to disk but does not replace or affect the current file.
+File: Save All                            :  Saves all open and modified files to disk.
+File: Save All Quietly                    :  Saves all modified files to disk without asking first.
+File: Save As Encoding...                 :  Saves the current file with a specific encoding or codepage.
+File: Save As...                          :  Saves the current file to a new name.
+File: Save New Backup File                :  Saves a new backup version of the current file.
+File: Save Selection...                   :  Saves selected text to a file.
+File: Save Workspace...                   :  Saves the current Workspace to a file.
+File: Show File in Explorer...            :  Shows the current file in Windows Explorer.
+File: Show File Status                    :  Displays file statistics in the status bar.
+FTP: FTP Browser Options                  :  Sets options for the FTP Browser window.
+Help: Help Mode                           :  Toggles contextual help mode on and off.
+Help: Help...                             :  Displays Source Insight online help.
+Help: HTML Help...                        :  Looks up the currently selected word in the HTML Help file.
+Help: SDK Help...                         :  Looks up the currently selected word in the SDK Help file.
+Help: Setup HTML Help                     :  Locates the external HTML Help file on your disk.
+Help: Setup WinHelp File                  :  Locate the external WinHelp file on your disk.
+Macro: IfdefBogus                         :  Custom Command or Editor Macro.
+Macro: IfdefNever                         :  Custom Command or Editor Macro.
+Macro: IfdefReview                        :  Custom Command or Editor Macro.
+Macro: InsertCPlusPlus                    :  Custom Command or Editor Macro.
+Macro: InsertFileHeader                   :  Custom Command or Editor Macro.
+Macro: InsertHeader                       :  Custom Command or Editor Macro.
+Macro: InsertIfdef                        :  Custom Command or Editor Macro.
+Macro: JumpAnywhere                       :  Custom Command or Editor Macro.
+Macro: KillLine                           :  Custom Command or Editor Macro.
+Macro: OutputSiblingSymbols               :  Custom Command or Editor Macro.
+Macro: PasteKillLine                      :  Custom Command or Editor Macro.
+Macro: ReturnTrueOrFalse                  :  Custom Command or Editor Macro.
+Menu: Activate Context Menu               :  Right-click context menu
+Menu: Activate Edit Menu                  :  Displays the Edit menu.
+Menu: Activate File Menu                  :  Displays the File menu.
+Menu: Activate Help Menu                  :  Displays the Help menu.
+Menu: Activate Menu Bar                   :  
+Menu: Activate Options Menu               :  Displays the Options menu.
+Menu: Activate Project Menu               :  Displays the project menu.
+Menu: Activate Search Menu                :  Displays the Search menu.
+Menu: Activate System Doc Menu            :  Displays the system Document menu.
+Menu: Activate System Menu                :  Displays the System window menu.
+Menu: Activate Tools Menu                 :  Displays the Tools menu.
+Menu: Activate View Menu                  :  Displays the View menu.
+Menu: Activate Window Menu                :  Displays the Window menu.
+Menu: Activate Work Menu                  :  Displays the Work menu.
+Menu: Arrange Windows                     :  Tiles and arranges source file windows.
+Menu: File Type and Language              :  
+Menu: Insert Snippet                      :  Inserts a code snippet.
+Menu: Outlining                           :  
+Menu: Panels                              :  Shows and hides panel windows.
+Menu: Recent Files                        :  Opens a recently used file.
+Menu: Special Edit                        :  Special edit commands.
+Menu: Toolbars                            :  Shows and hides toolbars.
+Menu: Visual Theme                        :  Selects a visual theme to use.
+Navigation: Activate Bookmark Window      :  Activates the Bookmarks window.
+Navigation: Beginning Of Line             :  Moves the cursor to the beginning of the line.
+Navigation: Beginning Of Selection        :  Moves the cursor to the beginning of an extended selection.
+Navigation: Blank Line Down               :  Moves cursor to the next blank line.
+Navigation: Blank Line Up                 :  Moves cursor to the previous blank line.
+Navigation: Block Down                    :  Moves cursor to the previous opening block/brace.
+Navigation: Block Up                      :  Moves cursor to the following closing block/brace.
+Navigation: Bookmark...                   :  Sets or jumps to a user defined bookmark.
+Navigation: Bottom Of File                :  Moves the cursor to the bottom of the file.
+Navigation: Bottom Of Window              :  Moves the cursor to the bottom of the window.
+Navigation: Cursor Down                   :  Moves the cursor down one line.
+Navigation: Cursor Left                   :  Moves the cursor left one character.
+Navigation: Cursor Right                  :  Moves the cursor right one character.
+Navigation: Cursor Up                     :  Moves the cursor up one line.
+Navigation: End Of Line                   :  Moves the cursor to the end of the line.
+Navigation: End Of Selection              :  Moves the cursor to the end of an extended selection.
+Navigation: Function Down                 :  Moves the cursor to the next defined function.
+Navigation: Function Up                   :  Moves the cursor to the previously defined function.
+Navigation: Go Back                       :  Moves the cursor to the previous location in the Selection History.
+Navigation: Go Back Toggle                :  Toggles between the last two cursor positions.
+Navigation: Go Forward                    :  Moves the cursor to next location in the Selection History.
+Navigation: Go To First Link              :  Moves the cursor to the first Source Link destination.
+Navigation: Go To Line...                 :  Moves the cursor to a specified line number.
+Navigation: Go To Next Change             :  Moves the cursor forward to the next set of modified lines.
+Navigation: Go To Next Link               :  Moves the cursor to the next Source Link destination.
+Navigation: Go To Next Reference Highlig  :  Moves the cursor forward to the next highlighted reference.
+Navigation: Go To Previous Change         :  Moves the cursor back to the previous set of modified lines.
+Navigation: Go To Previous Link           :  Moves the cursor to the previous Source Link destination.
+Navigation: Go To Previous Reference Hig  :  Moves the cursor back to the previous highlighted reference.
+Navigation: Highlight References          :  Highlights references to the symbol at the cursor position.
+Navigation: Jump To Link                  :  Moves the cursor to the other end of a Source Link.
+Navigation: Jump To Match                 :  Moves cursor to matching brace, parentheses, or quote character.
+Navigation: Make Column Selection         :  Makes a rectangular selection.
+Navigation: Page Down                     :  Scrolls down by one page.
+Navigation: Page Up                       :  Scrolls up by one page
+Navigation: Paren Left                    :  Moves cursor to the previous opening parentheses.
+Navigation: Paren Right                   :  Moves cursor to the following closing parentheses.
+Navigation: Parse Source Links...         :  Parses Source Links out of the current file.
+Navigation: Scroll Half Page Down         :  Scrolls window halfway down.
+Navigation: Scroll Half Page Up           :  Scrolls window halfway up.
+Navigation: Scroll Left                   :  Scrolls the window to the left.
+Navigation: Scroll Line Down              :  Scrolls window down by one line.
+Navigation: Scroll Line Up                :  Scrolls window up by one line.
+Navigation: Scroll Right                  :  Scrolls the window to the right.
+Navigation: Select All                    :  Selects all text in the current file.
+Navigation: Select Block                  :  Selects the enclosing code block
+Navigation: Select Char Left              :  Extends the selection one character to the left.
+Navigation: Select Char Right             :  Extends the selection one character to the right.
+Navigation: Select Function or Symbol     :  Selects the enclosing symbol definition, if any.
+Navigation: Select Line                   :  Selects the whole line.
+Navigation: Select Line Down              :  Extends the selection down by one line.
+Navigation: Select Line Up                :  Extends the selection up by one line.
+Navigation: Select Match                  :  Selects the matching brace, parentheses, or quote character.
+Navigation: Select Next Snippet Placehol  :  Selects the next snippet placeholder variable, if any.
+Navigation: Select Page Down              :  Extends the selection down by one page.
+Navigation: Select Page Up                :  Extends the selection up by one page.
+Navigation: Select Paragraph              :  Selects a paragraph of text.
+Navigation: Select Sentence               :  Selects up to the next period.
+Navigation: Select To                     :  Extends the selection up to the current mouse position.
+Navigation: Select To End Of File         :  Extends selection to end of file.
+Navigation: Select To End Of Line         :  Extends the selection to the end of the line.
+Navigation: Select To Start Of Line       :  Extends the selection to the beginning of the line.
+Navigation: Select To Top Of File         :  Extends selection to top of file.
+Navigation: Select Word                   :  Selects words under cursor.
+Navigation: Select Word Left              :  Extends the selection left by one word.
+Navigation: Select Word Right             :  Extends the selection right by one word.
+Navigation: Selection History...          :  Shows Selection History window.
+Navigation: Smart Beginning Of Line       :  Moves the cursor to the beginning of the line or file.
+Navigation: Smart End Of Line             :  Moves the cursor to the end of the line or file.
+Navigation: Toggle Extend Mode            :  Toggle the Select vs. Extend modes for selections.
+Navigation: Top Of File                   :  Moves the cursor to the top of the file.
+Navigation: Top Of Window                 :  Moves the cursor to the top of the window.
+Navigation: Word Fragment Left            :  Moves the cursor left one sub-word fragment.
+Navigation: Word Fragment Right           :  Moves the cursor right to next sub-word fragment.
+Navigation: Word Left                     :  Moves the cursor left one word.
+Navigation: Word Right                    :  Moves the cursor right one word.
+Options: Advanced Options...              :  Allows you to enable and disable various internal caches.
+Options: Color Options...                 :  Specifies colors of user interface items.
+Options: Context Window Options...        :  Sets options for the Context Window.
+Options: Create Command List              :  Creates a command list text file with descriptions.
+Options: Create Key List                  :  Creates a command keystroke listing.
+Options: Directory Compare Options        :  Sets options for the Directory Compare Window.
+Options: Display Options...               :  Specifies options, such as screen colors, for the display.
+Options: Edit Condition...                :  Edits the value of the selected parsing condition.
+Options: Enable Event Handlers            :  Enables event handler functions to be called.
+Options: File Compare Window Options...   :  Sets options for the File Compare Window.
+Options: File Options...                  :  Specifies file management options.
+Options: File Type Options...             :  Defines file types and their properties.
+Options: Folder Options...                :  Specifies the location of data folders.
+Options: General Options...               :  Specifies general preferences.
+Options: Key Assignments...               :  Customizes command keystrokes.
+Options: Language Options...              :  Sets options for all installed languages.
+Options: Language Properties...           :  Edits custom language properties.
+Options: Load Configuration...            :  Loads a new configuration from a file.
+Options: Manage Visual Themes...          :  Defines and applies visual themes for colors and fonts.
+Options: Menu Assignments...              :  Customizes menu contents.
+Options: New Relation Window              :  Creates a new Relation Window.
+Options: Next Relation Window View        :  Changes the view of the Relation Window.
+Options: Outlining Options...             :  Specifies options for outlining and collapsable blocks.
+Options: Page Setup...                    :  Specifies printing page options.
+Options: Preferences...                   :  Specifies user options.
+Options: Project File List Options...     :  Sets options for the Project File List window.
+Options: Project File Type Window Option  :  Sets options for the Project File Type window.
+Options: Project Folder Browser Options.  :  Sets options for the Project Folder Browser window.
+Options: Project Settings...              :  Specifies options for Projects.
+Options: Project Symbol Category Window   :  Sets options for the Project Symbol Category window.
+Options: Project Symbol List Options...   :  Sets options for the Project Symbol window.
+Options: Relation Window Graph Options..  :  Sets Graphing options for the Relation Window.
+Options: Relation Window Options...       :  Sets options for the Relation Window.
+Options: Remote Options...                :  Specifies options used in a remote desktop session.
+Options: Reset Scaling                    :  Resets the window scaling to normal.
+Options: Save Configuration...            :  Saves the current configuration to a file.
+Options: Scroll Bar Options...            :  Sets options for the vertical scroll bar.
+Options: Searching Options...             :  Specifies options for searching files.
+Options: Sort Symbol Window               :  Cycles through sort states for the Symbol Window.
+Options: Sort Symbols By Line             :  Sorts the Symbol Window by line number.
+Options: Sort Symbols By Name             :  Sorts the Symbol Window by symbol name.
+Options: Sort Symbols By Type             :  Sorts the Symbol Window by symbol type.
+Options: Style Properties...              :  Sets formatting properties for display styles.
+Options: Symbol Lookup Options...         :  Specifies options for looking up symbol definitions.
+Options: Symbol Window Options...         :  Sets options for the Symbol Window.
+Options: Syntax Color...                  :  Sets display colors of language components.
+Options: Syntax Decorations...            :  Specifies options for syntax decorations and auto-annotations used when displaying source files.
+Options: Syntax Formatting...             :  Specifies syntax formatting options for displaying source files.
+Options: Syntax Keyword List...           :  Edits the keyword list used for syntax formatting the current language.
+Options: Typing Options...                :  Specifies typing and editing options.
+Options: Window List Options...           :  Sets options for the Window List.
+Options: Window Options...                :  Specifies options for source file windows.
+Options: Window Tab Options...            :  Sets options for the Window Tabs.
+Outline: Collapse                         :  Collapses the selected block.
+Outline: Collapse All                     :  Collapses the major blocks.
+Outline: Expand                           :  Expands the hidden block.
+Outline: Expand All                       :  Expands all blocks.
+Outline: Show Outlining                   :  Turns outline view on and off in the current file.
+Outline: Toggle Expansions                :  Toggles expansion of the selected outline region.
+Project: Add and Remove Project Files...  :  Adds and removes files from the current project.
+Project: Add File List...                 :  Adds a list of files to the current project.
+Project: Add File...                      :  Adds files to the current project.
+Project: Close Project                    :  Closes the current project.
+Project: Copy Project...                  :  Copies the current project to a new project.
+Project: Export Project File List...      :  Saves a text file containing a list of all project files.
+Project: Export Project to HTML...        :  Exports all project source files to HTML.
+Project: New Project...                   :  Creates a new project.
+Project: Open Project Master File List..  :  Opens the text file containing the master file list of all project files.
+Project: Open Project...                  :  Opens an existing project.
+Project: Parsing Test                     :  Parses all files in the project and tests the language parsers.
+Project: Project Info...                  :  Display project information and statistics.
+Project: Project Report...                :  Generates statistics for the current project.
+Project: Rebuild Project...               :  Rebuilds project data files.
+Project: Remove File...                   :  Removes files from the current project.
+Project: Remove Project...                :  Deletes a project.
+Project: Rename Project...                :  Renames the current project.
+Project: Synchronize Files...             :  Synchronizes the current project with changes made to files outside the editor.
+Search: Incremental Search Backward...    :  Searches backwards incrementally while you type a pattern string.
+Search: Incremental Search...             :  Searches incrementally while you type a pattern string.
+Search: Load Search String                :  Loads the contents of the current selection into the current search pattern.
+Search: Replace Files...                  :  Replaces text in multiple files.
+Search: Search Backward                   :  Searches backwards for the previous occurrence of the search pattern.
+Search: Search Backward for Selection     :  Searches for the previous occurrence of the first word in the current selection.
+Search: Search Engines...                 :  Edits the list of web search engines used by the Search Web command.
+Search: Search Files...                   :  Searches for text across multiple files.
+Search: Search Forward                    :  Searches for the next occurrence of the search pattern.
+Search: Search Forward for Selection      :  Searches for the next occurrence of the first word in the current selection.
+Search: Search Project...                 :  Searches for text or keywords across all project files.
+Search: Search Results Options...         :  Controls what information is included in the Search Results for the Search and Lookup References commands.
+Search: Search Web...                     :  Searches the Web for the item under the cursor.
+Search: Search...                         :  Searches for text in the current file
+Source Control: Check In                  :  Checks the current file into the Source Control Project.
+Source Control: Check Out                 :  Checks the current file out of the Source Control Project.
+Source Control: Sync File to Source Cont  :  Gets the latest version of the current file from the Source Control Project.
+Source Control: Sync to Source Control P  :  Gets the latest version of all Source Control Project files.
+Source Control: Undo Check Out            :  Undoes the checkout of the current file from the Source Control Project.
+Symbol: Browse Local File Symbols...      :  Lists symbolic information for the current file.
+Symbol: Browse Project Symbols...         :  Lists all symbolic information for the current project.
+Symbol: Generate Call Tree...             :  Displays direct and indirect calls from the selected identifier.
+Symbol: Import External Symbols for Curr  :  Imports symbols from external sources, libraries and assemblies for use with the current project.
+Symbol: Import External Symbols...        :  Imports symbols from external sources, libraries and assemblies for all projects.
+Symbol: Jump To Base Type                 :  Moves the cursor to the base structure type of the selected symbol.
+Symbol: Jump To Caller                    :  Jumps to the caller or reference of the current function or identifier.
+Symbol: Jump To Definition                :  Moves the cursor to the definition of the selected symbol.
+Symbol: Jump To Prototype...              :  Moves the cursor to the declaration of the selected function prototype.
+Symbol: Lookup References...              :  Searches for references to the selected or specified word.
+Symbol: Parse File Now                    :  Parses the current file on demand.
+Symbol: Project Symbols Dialog...         :  Lists all symbolic information for the current project.
+Symbol: Symbol Info...                    :  Displays a popup window showing a symbol's definition.
+Toolbar: Arrangement Toolbar              :  Shows or hides the Arrangement toolbar.
+Toolbar: Browse Toolbar                   :  Shows or hides the Browsing toolbar.
+Toolbar: Build Toolbar                    :  Shows or hides the Build toolbar.
+Toolbar: Edit Toolbar                     :  Shows or hides the Edit toolbar.
+Toolbar: File Toolbar                     :  Shows or hides the File toolbar.
+Toolbar: Help Toolbar                     :  Shows or hides the Help toolbar
+Toolbar: Layout Toolbar                   :  Shows or hides the Layout toolbar.
+Toolbar: Main Toolbar                     :  Toggles the master Toolbar on and off.
+Toolbar: Navigation Toolbar               :  Shows or hides the Navigation toolbar.
+Toolbar: Outline Toolbar                  :  Shows or hides the Outlining toolbar.
+Toolbar: Search Toolbar                   :  Shows or hides the Search toolbar.
+Toolbar: Source Control Toolbar           :  Shows or hides the Source Control toolbar.
+Toolbar: Symbols Toolbar                  :  Shows or hides the Symbols toolbar.
+Toolbar: View Toolbar                     :  Shows or hides the View toolbar.
+Tools: Compare Files...                   :  Compares the current file to another file.
+Tools: Compare with Backup File...        :  Compares the current file to an older backup version.
+Tools: Custom Commands...                 :  Defines new commands that can invoke external programs.
+Tools: Reformat Source Code               :  Reformats and beautifies the current file or selection.
+Tools: Reformat Source Code Options...    :  Manages Presets for reformating source files.
+Tools: Save Declaration File              :  Saves a function declaration header file for the current file.
+View: Activate Clip Window                :  Opens and selects the Clip Window.
+View: Activate FTP Browser                :  Opens and activates the FTP Browser.
+View: Activate Project File List          :  Activates the project file list in the Project Window so you can type a file name.
+View: Activate Project Search Bar         :  Activates the Project Search Bar so you can start typing into it.
+View: Activate Project Symbol List        :  Activates the project symbol list in the Project Window so you can type a symbol name.
+View: Activate Project Window             :  Opens and selects the Project Window
+View: Activate Relation Window            :  Opens and selects the Relation Window.
+View: Activate Search Bar                 :  Activates the Search Bar so you can start typing into it.
+View: Activate Search Results             :  Activates the Search Results window.
+View: Activate Snippet Window             :  Opens and selects the Snippet Window.
+View: Activate Symbol Window              :  Opens and selects the Symbol Window for the current file.
+View: Activate Window List                :  Opens and selects the Window List.
+View: Bookmark Window                     :  Toggles the Bookmarks window on and off.
+View: Clear Highlights                    :  Removes all word highlighting in all source windows.
+View: Clip Window                         :  Toggles the Clip Window on and off.
+View: Context Window                      :  Toggles the Context Window on and off.
+View: Directory Compare                   :  Displays the Directory Compare window.
+View: File Compare                        :  Displays the File Compare window.
+View: File Search Bar                     :  Toggles the File Search Bar on and off.
+View: FTP Browser                         :  Toggles the FTP Browser on and off.
+View: Full Screen                         :  Toggles full-screen view mode.
+View: Highlight Word                      :  Toggles highlighting of the word under the cursor in all source windows.
+View: Horizontal Scroll Bar               :  Toggles the horizontal scroll bar in the current window on and off.
+View: Line Numbers                        :  Toggles the display of line numbers.
+View: Load Layout A                       :  Loads window arrangement from a layout file.
+View: Load Layout B                       :  Loads window arrangement from a layout file.
+View: Load Layout C                       :  Loads window arrangement from a layout file.
+View: Load Layout D                       :  Loads window arrangement from a layout file.
+View: Load Layout...                      :  Loads window arrangement from a layout file.
+View: Overview                            :  Shows and hides the File Compare Overview pane.
+View: Overview                            :  Shows and hides the File Compare Overview pane.
+View: Overview                            :  Shows and hides the Overview pane.
+View: Overview Options...                 :  Specifies options for the Overview pane.
+View: Project File List                   :  Displays all project files in the Project Window.
+View: Project File Types                  :  Displays project files by document type in the Project Window.
+View: Project Folder Browser              :  Displays the Folder Browser in the Project Window.
+View: Project Search Bar                  :  Toggles the Project Search Bar on and off.
+View: Project Symbol Categories           :  Displays project symbols by category in the Project Window.
+View: Project Symbol List                 :  Displays all project symbols in the Project Window.
+View: Project Window                      :  Toggles the Project Window on and off.
+View: Relation Window                     :  Toggles the Relation Window on and off.
+View: Reset Layout...                     :  Resets the window arrangement to the default setup.
+View: Save Layout...                      :  Saves window arrangement to a layout file.
+View: Show Nesting Lines                  :  Shows and hides nesting lines by code blocks.
+View: Show Relations                      :  Views relationships to the selected symbol in the Relation Window.
+View: Snippet Window                      :  Toggles the Snippet Window on and off.
+View: Status Bar                          :  Toggles the Status Bar on and off.
+View: Symbol Window                       :  Toggles the Symbol Window on and off.
+View: Tab Tray                            :  Toggles the Tab Tray at the bottom of the main window on and off.
+View: Vertical Enhanced Scroll Bar        :  Toggles the enhanced vertial scroll bar in the current window on and off.
+View: Vertical Scroll Bar                 :  Toggles the vertical scroll bar in the current window on and off.
+View: Vertical Scroll Bar                 :  Toggles the vertical scroll bar in the File Compare window.
+View: View Relation Horizontal Graph      :  Displays a tree graph view that grows left to right.
+View: View Relation Outline               :  Displays an outline view.
+View: View Relation Vertical Graph        :  Displays a tree graph view that grows top to bottom.
+View: Visible End Of Line                 :  Toggles the display of visible end-of-line characters.
+View: Visible Spaces                      :  Toggles the display of visible spaces.
+View: Visible Tabs                        :  Toggles the display of visible tabs.
+View: Visible Tabs and Spaces             :  Toggles the display of visible white space.
+View: Window List                         :  Toggles the Window List on and off.
+View: Window Tabs                         :  Toggles the window tabs on and off.
+Windows: Cascade Windows                  :  Rearranges windows by cascading them down the screen.
+Windows: Close Window                     :  Closes the current window.
+Windows: Last Window                      :  Activates the previous current source window.
+Windows: Link All Windows                 :  Links all windows so that they scroll together.
+Windows: Link Window...                   :  Links the current window to another window so that they scroll together.
+Windows: New Window                       :  Creates a new duplicate window.
+Windows: Pick Window...                   :  Manages the list of source windows.
+Windows: Remove Special Window Color      :  Removes the special window color.
+Windows: Select Next Window               :  Selects the next active window.
+Windows: Select Previous Window           :  Selects the last window.
+Windows: Show Clipboard                   :  Shows the clipboard window.
+Windows: Special Window Color...          :  Sets the special window color.
+Windows: Split Window                     :  Splits and unsplits the current window into 2 windows.
+Windows: Sync File Windows                :  Scrolls all windows showing the current file to same location as the current window.
+Windows: Tile Horizontal                  :  Tiles windows so that they are generally wider than they are tall.
+Windows: Tile One Window                  :  Minimizes all but the current window.
+Windows: Tile Two Windows                 :  Arranges the two most recently used windows.
+Windows: Tile Vertical                    :  Tiles windows so that they are generally taller than they are wide.
+Windows: Zoom Window                      :  Maximizes and minimizes the current window.
+

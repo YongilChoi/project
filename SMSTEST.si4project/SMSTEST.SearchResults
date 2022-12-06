@@ -1,0 +1,2 @@
+---- Gateway Status Matches (1 in 1 files) ----
+Settings.get_registered_settings in class-wpsms-settings.php (app\public\wp-content\plugins\wp-sms\includes\admin\settings) :                     'name' => __('Gateway Status', 'wp-sms'),

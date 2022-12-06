@@ -53,8 +53,10 @@ $ch = curl_init();
 
 $username = "sgis01";                //필수입력
 $key = "2jY4VeF3LC06JBq";         //필수입력
-$kakao_plus_id = "hurstchoi@daum.net";            //필수입력
-$user_template_no = 3;            //필수입력 (하단 259 라인 API 이용하여 확인)
+$kakao_plus_id = "kimchikorea";  //필수입력 (하단 259 라인 API 이용하여 확인)
+$user_template_no = 3;   
+
+
 
 //수신자 정보 추가 - 필수 입력(주소록 미사용시), 치환문자 미사용시 치환문자 데이터를 입력하지 않고 사용할수 있습니다.
 //치환문자 미사용시 "{"mobile":"01000000001"} 번호만 입력 해주시기 바랍니다.

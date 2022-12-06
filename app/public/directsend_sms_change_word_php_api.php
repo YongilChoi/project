@@ -39,9 +39,12 @@ $ch = curl_init();
 
 $title = "MMS/LMS 제목입니다.";
 $message = '[$NAME]님 알림 문자 입니다. 전화번호 : [$MOBILE] 비고1 : [$NOTE1] 비고2 : [$NOTE2] 비고3 : [$NOTE3] 비고4 : [$NOTE4] 비고5 : [$NOTE5] ';             //필수입력
-$sender = "0263008777";                    //필수입력
-$username = "sgis01";                //필수입력
-$key = "2jY4VeF3LC06JBq";           //필수입력
+// $sender = "0263008777";                    //필수입력
+// $username = "sgis01";                //필수입력
+// $key = "2jY4VeF3LC06JBq";           //필수입력
+$sender = "01097694876"; 
+$username = "hurstchoi";                //필수입력
+$key = "n8uEP6VmkHQj3Ou";  
 
 //수신자 정보 추가 - 필수 입력(주소록 미사용시), 치환문자 미사용시 치환문자 데이터를 입력하지 않고 사용할수 있습니다.
 //치환문자 미사용시 "{"mobile":"01000000001"} 번호만 입력 해주시기 바랍니다.

@@ -69,10 +69,10 @@ $ch = curl_init();
 
 /* 여기서부터 수정해주시기 바랍니다. */
 
-$username = "directsend id";                //필수입력
-$key = "directsend 발급 api key";         //필수입력
+$username = "sgis01";                //필수입력
+$key = "2jY4VeF3LC06JBq";         //필수입력
 $kakao_plus_id = "directsend에 등록한 발신프로필 @검색용아이디";            //필수입력
-$user_template_no = "directsend에 등록한 템플릿 번호";            //필수입력 (하단 259 라인 API 이용하여 확인)
+$user_template_no = "3";            //필수입력 (하단 259 라인 API 이용하여 확인)
 
 //수신자 정보 추가 - 필수 입력(주소록 미사용시), 치환문자 미사용시 치환문자 데이터를 입력하지 않고 사용할수 있습니다.
 //치환문자 미사용시 "{"mobile":"01000000001"} 번호만 입력 해주시기 바랍니다.
@@ -93,7 +93,7 @@ $receiver = '['.$receiver.']';
 $kakao_faild_type = "1";          // 1 : 대체문자(SMS) / 2 : 대체문자(LMS) / 3 : 대체문자(MMS) 대체문자 사용시 필수 입력
 $title = "대체문자 MMS/LMS 제목입니다.";
 $message = '[$NAME]님 알림 문자 입니다. 전화번호 : [$MOBILE] 비고1 : [$NOTE1] 비고2 : [$NOTE2] 비고3 : [$NOTE3] 비고4 : [$NOTE4] 비고5 : [$NOTE5]';             //대체문자 사용시 필수입력
-$sender = "발신자번호";                    //대체문자 사용시 필수입력
+$sender = "0263008777";                    //대체문자 사용시 필수입력
 
 // 예약발송 정보 추가
 $reserve_type = 'NORMAL'; // NORMAL - 즉시발송 / ONETIME - 1회예약 / WEEKLY - 매주정기예약 / MONTHLY - 매월정기예약

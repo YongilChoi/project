@@ -76,10 +76,9 @@ class Settings
     public function get_settings()
     {
         $settings = get_option($this->setting_name);
+
         if (!$settings) {
-            update_option($this->setting_name, array(
-                'rest_api_status' => 1,
-            ));
+            update_option($this->setting_name, array());
         }
 
         return apply_filters('wpsms_get_settings', $settings);
@@ -142,6 +141,7 @@ class Settings
      * @return              array Tabs list
      * @since               2.0
      */
+     /* Settings 의 좌측 메뉴 죽 열거 */ 
     public function get_tabs()
     {
         $tabs = array(
@@ -158,7 +158,7 @@ class Settings
             /*
              * Pro Pack tabs
              */
-            'pro_wordpress'        => __('2FA & Login', 'wp-sms'),
+         /*   'pro_wordpress'        => __('2FA & Login', 'wp-sms'),
             'pro_buddypress'       => __('BuddyPress', 'wp-sms'),
             'pro_woocommerce'      => __('WooCommerce', 'wp-sms'),
             'pro_gravity_forms'    => __('Gravity Forms', 'wp-sms'),
@@ -166,7 +166,7 @@ class Settings
             'pro_edd'              => __('Easy Digital Downloads', 'wp-sms'),
             'pro_wp_job_manager'   => __('WP Job Manager', 'wp-sms'),
             'pro_awesome_support'  => __('Awesome Support', 'wp-sms'),
-            'pro_ultimate_members' => __('Ultimate Members', 'wp-sms'),
+            'pro_ultimate_members' => __('Ultimate Members', 'wp-sms'), */
 
             'licenses' => __('Licenses', 'wp-sms')
         );
@@ -1410,7 +1410,7 @@ class Settings
                 // Gateway
                 'gateway_title'             => array(
                     'id'   => 'gateway_title',
-                    'name' => __('SMS Gateway Configuration', 'wp-sms'),
+                    'name' => __('SMS Gateway Configuration', 'wp-sms'),  //화면의 SMS Gateway Configuration by Yong
                     'type' => 'header'
                 ),
                 'gateway_name'              => array(
@@ -1418,7 +1418,7 @@ class Settings
                     'name'    => __('Choose the Gateway', 'wp-sms'),
                     'type'    => 'advancedselect',
                     'options' => Gateway::gateway(),
-                    'desc'    => __('Select the SMS Gateway from which you want to send the SMS.', 'wp-sms')
+                    'desc'    => __('Select the SMS Gateway from which you want to send the SMS.', 'wp-sms')  //설명문 
                 ),
                 'gateway_help'              => array(
                     'id'      => 'gateway_help',
@@ -1440,7 +1440,7 @@ class Settings
                 ),
                 'gateway_sender_id'         => array(
                     'id'   => 'gateway_sender_id',
-                    'name' => __('Sender ID/Number', 'wp-sms'),
+                    'name' => __('Sender ID/Number', 'wp-sms'),  //Sender number 
                     'type' => 'text',
                     'std'  => Gateway::from(),
                     'desc' => __('Sender number or sender ID', 'wp-sms')
@@ -1604,18 +1604,6 @@ class Settings
              * Feature fields
              */
             'advanced'              => apply_filters('wp_sms_feature_settings', array(
-                'rest_api'                                 => array(
-                    'id'   => 'rest_api',
-                    'name' => __('REST API', 'wp-sms'),
-                    'type' => 'header'
-                ),
-                'rest_api_status'                          => array(
-                    'id'      => 'rest_api_status',
-                    'name'    => __('REST API status', 'wp-sms'),
-                    'type'    => 'checkbox',
-                    'options' => $options,
-                    'desc'    => __('Add WP SMS endpoints to the WP Rest API', 'wp-sms')
-                ),
                 'short_url'                                 => array(
                     'id'   => 'short_url',
                     'name' => __('Bitly Short URL API', 'wp-sms'),
@@ -2432,7 +2420,7 @@ class Settings
         $contentRestricted = in_array($active_tab, $this->proTabs) && !$this->proIsInstalled;
         ob_start(); ?>
     <div class="wrap wpsms-wrap wpsms-settings-wrap">
-        <?php require_once WP_SMS_DIR . 'includes/templates/header.php'; ?>
+        <?php echo Helper::loadTemplate('header.php'); ?>
         <div class="wpsms-wrap__main">
             <?php do_action('wp_sms_settings_page'); ?>
             <h2><?php _e('Settings', 'wp-sms') ?>

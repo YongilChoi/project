@@ -876,3 +876,58 @@ Stack trace:
 [30-Nov-2022 12:49:12 UTC] PHP   9. Plugin_Upgrader->clear_destination() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-wp-upgrader.php:560
 [30-Nov-2022 12:49:12 UTC] PHP  10. WP_Filesystem_Direct->delete() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-wp-upgrader.php:416
 [30-Nov-2022 12:49:12 UTC] PHP  11. rmdir() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-wp-filesystem-direct.php:390
+[05-Dec-2022 06:23:53 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[05-Dec-2022 06:23:53 UTC] PHP Stack trace:
+[05-Dec-2022 06:23:53 UTC] PHP   1. {main}() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[05-Dec-2022 06:23:53 UTC] PHP   2. include() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[05-Dec-2022 06:23:53 UTC] PHP   3. include() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[05-Dec-2022 06:23:53 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[05-Dec-2022 06:23:53 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[05-Dec-2022 06:23:53 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[05-Dec-2022 06:23:53 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[05-Dec-2022 06:23:53 UTC] PHP   8. require() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[05-Dec-2022 06:23:53 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[05-Dec-2022 06:23:53 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[05-Dec-2022 06:23:53 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[05-Dec-2022 06:23:53 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[05-Dec-2022 06:23:55 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[05-Dec-2022 06:23:55 UTC] PHP Stack trace:
+[05-Dec-2022 06:23:55 UTC] PHP   1. {main}() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[05-Dec-2022 06:23:55 UTC] PHP   2. include() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[05-Dec-2022 06:23:55 UTC] PHP   3. include() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[05-Dec-2022 06:23:55 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[05-Dec-2022 06:23:55 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[05-Dec-2022 06:23:55 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[05-Dec-2022 06:23:55 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[05-Dec-2022 06:23:55 UTC] PHP   8. require() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[05-Dec-2022 06:23:55 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[05-Dec-2022 06:23:55 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[05-Dec-2022 06:23:55 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[05-Dec-2022 06:23:55 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[05-Dec-2022 06:25:01 UTC] PHP Warning:  fopen(C:\WINDOWS/464765787638d8ebd254f5.tmp): failed to open stream: Permission denied in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php on line 2270
+[05-Dec-2022 06:25:01 UTC] PHP Stack trace:
+[05-Dec-2022 06:25:01 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin-ajax.php:0
+[05-Dec-2022 06:25:01 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin-ajax.php:187
+[05-Dec-2022 06:25:01 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:476
+[05-Dec-2022 06:25:01 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:331
+[05-Dec-2022 06:25:01 UTC] PHP   5. wp_ajax_update_plugin() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:307
+[05-Dec-2022 06:25:01 UTC] PHP   6. Plugin_Upgrader->bulk_upgrade() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\ajax-actions.php:4547
+[05-Dec-2022 06:25:01 UTC] PHP   7. Plugin_Upgrader->run() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-plugin-upgrader.php:345
+[05-Dec-2022 06:25:01 UTC] PHP   8. Plugin_Upgrader->download_package() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-wp-upgrader.php:744
+[05-Dec-2022 06:25:01 UTC] PHP   9. download_url() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-wp-upgrader.php:284
+[05-Dec-2022 06:25:01 UTC] PHP  10. wp_tempnam() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\file.php:1136
+[05-Dec-2022 06:25:01 UTC] PHP  11. get_temp_dir() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\file.php:660
+[05-Dec-2022 06:25:01 UTC] PHP  12. wp_is_writable() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:2203
+[05-Dec-2022 06:25:01 UTC] PHP  13. win_is_writable() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:2236
+[05-Dec-2022 06:25:01 UTC] PHP  14. win_is_writable() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:2264
+[05-Dec-2022 06:25:01 UTC] PHP  15. fopen() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:2270
+[06-Dec-2022 06:54:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\my-sms\sms.php:13
+Stack trace:
+#0 {main}
+  thrown in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\my-sms\sms.php on line 13
+[06-Dec-2022 06:56:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in C:\Users\SIMON\Local Sites\wpsmstest\app\public\sms.php:13
+Stack trace:
+#0 {main}
+  thrown in C:\Users\SIMON\Local Sites\wpsmstest\app\public\sms.php on line 13

@@ -333,7 +333,7 @@ function wp_sms_get_countries()
         '+677' => 'Solomon Islands (+677)',
         '+252' => 'Somalia (Soomaaliya) (+252)',
         '+27'  => 'South Africa (+27)',
-        '+82'  => 'South Korea (대한민국) (+82)',
+        '+82'  => 'South Korea (대한민국) (+82)',  //yong
         '+211' => 'South Sudan (جنوب السودان) (+211)',
         '+34'  => 'Spain (España) (+34)',
         '+94'  => 'Sri Lanka (ශ්‍රී ලංකාව) (+94)',
@@ -411,7 +411,7 @@ function wp_sms_subscribes()
  *
  * @return string
  */
-function wp_sms_get_option($option_name, $pro = false, $setting_name = '')
+function wp_sms_get_option($option_name, $pro = true, $setting_name = '')  //yong
 {
     return Option::getOption($option_name, $pro, $setting_name);
 }
