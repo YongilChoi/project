@@ -1,7 +1,7 @@
 <div class="wrap wpsms-wrap">
     <?php echo \WP_SMS\Helper::loadTemplate('header.php'); ?>
     <div class="wpsms-wrap__main">
-        <h1 class="wrap__title"><?php _e('Send SMS by Yong', 'wp-sms'); ?>  <!-- reviewed by yong -->
+        <h1 class="wrap__title"><?php _e('Send SMS', 'wp-sms'); ?>
         </h1>
         <div class="wpsms-wrap__main__notice notice is-dismissible">
             <p class="wpsms-wrap__notice__text" style="padding: 10px 0; white-space: pre;"></p>
@@ -24,26 +24,6 @@
                             <form method="post" action="">
                                 <?php wp_nonce_field('update-options'); ?>
                                 <table class="form-table">
-                                    <tr valign="top">
-                                        <th scope="row">
-                                            <label for="wp_selection_sms_or_kakao"><?php _e('Selection', 'wp-sms'); ?> SMS or KakaoTalk:</label>
-                                        </th>
-                                        <td>
-                                            <input type="radio" name="wp_selection_sms_or_kakao" id="wp_selection_sms_or_kakao" value="SMS" />
-                                            <label for="wp_selection_sms_or_kakao">SMS</label>
-                                            <input type="radio" name="wp_selection_sms_or_kakao" id="wp_selection_sms_or_kakao" value="Kakao alimtalk" />
-                                             <label for="wp_selection_sms_or_kakao">Kakao alimtalk</label>
-                                             <label for="template">Choose template Number from the list:</label>
-                                             <input list="templateNumbers" name="template" id="template">
-                                             <datalist id="templateNumbers">
-                                             	<option value="1">
-                                             	<option value="2">
-                                             	<option value="3">
-                                             </datalist><BR>
-                                             When sending KakaoTalk, the template registration must be preceded.
-
-                                        </td>
-                                    </tr>
                                     <tr valign="top">
                                         <th scope="row">
                                             <label for="wp_get_sender"><?php _e('From', 'wp-sms'); ?>:</label>
@@ -270,7 +250,7 @@
                                     <tr>
                                         <td>
                                             <p class="submit" style="padding: 0;">
-                                                <input type="submit" class="button-primary" name="SendSMS" value="<?php _e('Send SMS', 'wp-sms'); ?>"/> <!-- reviewed by yong -->
+                                                <input type="submit" class="button-primary" name="SendSMS" value="<?php _e('Send SMS', 'wp-sms'); ?>"/>
                                             </p>
                                         </td>
                                     </tr>
