@@ -931,3 +931,127 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\Users\SIMON\Local Sites\wpsmstest\app\public\sms.php on line 13
+[06-Dec-2022 23:44:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[06-Dec-2022 23:44:26 UTC] PHP Stack trace:
+[06-Dec-2022 23:44:26 UTC] PHP   1. {main}() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[06-Dec-2022 23:44:26 UTC] PHP   2. include() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[06-Dec-2022 23:44:26 UTC] PHP   3. include() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[06-Dec-2022 23:44:26 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[06-Dec-2022 23:44:26 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[06-Dec-2022 23:44:26 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[06-Dec-2022 23:44:26 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[06-Dec-2022 23:44:26 UTC] PHP   8. require() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[06-Dec-2022 23:44:26 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[06-Dec-2022 23:44:26 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[06-Dec-2022 23:44:26 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[06-Dec-2022 23:44:26 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[06-Dec-2022 23:44:30 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[06-Dec-2022 23:44:30 UTC] PHP Stack trace:
+[06-Dec-2022 23:44:30 UTC] PHP   1. {main}() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[06-Dec-2022 23:44:30 UTC] PHP   2. include() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[06-Dec-2022 23:44:30 UTC] PHP   3. include() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[06-Dec-2022 23:44:30 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[06-Dec-2022 23:44:30 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[06-Dec-2022 23:44:30 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[06-Dec-2022 23:44:30 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[06-Dec-2022 23:44:30 UTC] PHP   8. require() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[06-Dec-2022 23:44:30 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[06-Dec-2022 23:44:30 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[06-Dec-2022 23:44:30 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[06-Dec-2022 23:44:30 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[06-Dec-2022 23:52:47 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[06-Dec-2022 23:52:47 UTC] PHP Stack trace:
+[06-Dec-2022 23:52:47 UTC] PHP   1. {main}() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[06-Dec-2022 23:52:47 UTC] PHP   2. include() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[06-Dec-2022 23:52:47 UTC] PHP   3. include() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[06-Dec-2022 23:52:47 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[06-Dec-2022 23:52:47 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[06-Dec-2022 23:52:47 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[06-Dec-2022 23:52:47 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[06-Dec-2022 23:52:47 UTC] PHP   8. require() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[06-Dec-2022 23:52:47 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[06-Dec-2022 23:52:47 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[06-Dec-2022 23:52:47 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[06-Dec-2022 23:52:47 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[07-Dec-2022 00:14:43 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[07-Dec-2022 00:14:43 UTC] PHP Stack trace:
+[07-Dec-2022 00:14:43 UTC] PHP   1. {main}() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[07-Dec-2022 00:14:43 UTC] PHP   2. include() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[07-Dec-2022 00:14:43 UTC] PHP   3. include() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[07-Dec-2022 00:14:43 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[07-Dec-2022 00:14:43 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[07-Dec-2022 00:14:43 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[07-Dec-2022 00:14:43 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[07-Dec-2022 00:14:43 UTC] PHP   8. require() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[07-Dec-2022 00:14:43 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[07-Dec-2022 00:14:43 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[07-Dec-2022 00:14:43 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[07-Dec-2022 00:14:43 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[07-Dec-2022 00:14:52 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[07-Dec-2022 00:14:52 UTC] PHP Stack trace:
+[07-Dec-2022 00:14:52 UTC] PHP   1. {main}() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[07-Dec-2022 00:14:52 UTC] PHP   2. include() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[07-Dec-2022 00:14:52 UTC] PHP   3. include() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[07-Dec-2022 00:14:52 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[07-Dec-2022 00:14:52 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[07-Dec-2022 00:14:52 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[07-Dec-2022 00:14:52 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[07-Dec-2022 00:14:52 UTC] PHP   8. require() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[07-Dec-2022 00:14:52 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[07-Dec-2022 00:14:52 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[07-Dec-2022 00:14:52 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[07-Dec-2022 00:14:52 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[07-Dec-2022 00:15:00 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[07-Dec-2022 00:15:00 UTC] PHP Stack trace:
+[07-Dec-2022 00:15:01 UTC] PHP   1. {main}() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[07-Dec-2022 00:15:01 UTC] PHP   2. include() C:\Users\SIMON\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[07-Dec-2022 00:15:01 UTC] PHP   3. include() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[07-Dec-2022 00:15:01 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[07-Dec-2022 00:15:01 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[07-Dec-2022 00:15:01 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[07-Dec-2022 00:15:01 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[07-Dec-2022 00:15:01 UTC] PHP   8. require() phar://C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[07-Dec-2022 00:15:01 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[07-Dec-2022 00:15:01 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[07-Dec-2022 00:15:01 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[07-Dec-2022 00:15:01 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[08-Dec-2022 09:08:32 UTC] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[08-Dec-2022 09:08:32 UTC] PHP Fatal error:  Unknown: Failed opening required 'C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/local-bootstrap.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in Unknown on line 0
+[08-Dec-2022 09:08:32 UTC] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[08-Dec-2022 09:08:32 UTC] PHP Fatal error:  Unknown: Failed opening required 'C:/Users/SIMON/AppData/Local/Programs/Local/resources/extraResources/local-bootstrap.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in Unknown on line 0
+[12-Dec-2022 02:09:35 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[12-Dec-2022 02:09:35 UTC] PHP Stack trace:
+[12-Dec-2022 02:09:35 UTC] PHP   1. {main}() C:\Program Files (x86)\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[12-Dec-2022 02:09:35 UTC] PHP   2. include() C:\Program Files (x86)\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[12-Dec-2022 02:09:35 UTC] PHP   3. include() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[12-Dec-2022 02:09:35 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[12-Dec-2022 02:09:35 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[12-Dec-2022 02:09:35 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[12-Dec-2022 02:09:35 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[12-Dec-2022 02:09:35 UTC] PHP   8. require() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[12-Dec-2022 02:09:35 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[12-Dec-2022 02:09:35 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[12-Dec-2022 02:09:35 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[12-Dec-2022 02:09:35 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
+[12-Dec-2022 07:27:28 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다.
+ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php on line 1756
+[12-Dec-2022 07:27:28 UTC] PHP Stack trace:
+[12-Dec-2022 07:27:28 UTC] PHP   1. {main}() C:\Program Files (x86)\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[12-Dec-2022 07:27:28 UTC] PHP   2. include() C:\Program Files (x86)\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[12-Dec-2022 07:27:28 UTC] PHP   3. include() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[12-Dec-2022 07:27:28 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[12-Dec-2022 07:27:28 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:78
+[12-Dec-2022 07:27:28 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:28
+[12-Dec-2022 07:27:28 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1235
+[12-Dec-2022 07:27:28 UTC] PHP   8. require() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1317
+[12-Dec-2022 07:27:28 UTC] PHP   9. require_wp_db() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-settings.php:124
+[12-Dec-2022 07:27:28 UTC] PHP  10. wpdb->__construct() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\load.php:561
+[12-Dec-2022 07:27:28 UTC] PHP  11. wpdb->db_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:724
+[12-Dec-2022 07:27:28 UTC] PHP  12. mysqli_real_connect() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\wp-db.php:1756
