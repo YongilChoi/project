@@ -1,7 +1,6 @@
 # ignore
 
 Plugin_wp_sms.si4project/
-SMSTEST.si4project/
 
 conf/
 

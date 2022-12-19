@@ -4,5 +4,3 @@
 [Tue Oct 25 19:37:52.488664 2022] [fcgid:warn] [pid 18168:tid 1356] [client 127.0.0.1:57566] mod_fcgid: HTTP request length 134793 (so far) exceeds MaxRequestLen (131072), referer: http://wpsmstest.local/wp-admin/plugin-install.php
 [Tue Oct 25 20:17:06.254729 2022] [fcgid:warn] [pid 18168:tid 1356] [client 127.0.0.1:58605] mod_fcgid: HTTP request length 134793 (so far) exceeds MaxRequestLen (131072), referer: http://wpsmstest.local/wp-admin/plugin-install.php
 [Tue Oct 25 20:23:31.728935 2022] [fcgid:warn] [pid 18168:tid 1348] [client 127.0.0.1:52422] mod_fcgid: HTTP request length 134276 (so far) exceeds MaxRequestLen (131072), referer: http://kimchikorea.org/wp-admin/plugin-install.php
-[Wed Dec 07 09:20:24.019619 2022] [fcgid:warn] [pid 3484:tid 1368] [client ::1:63978] mod_fcgid: HTTP request length 136000 (so far) exceeds MaxRequestLen (131072), referer: http://localhost:10011/wp-admin/plugin-install.php
-[Thu Dec 08 14:15:25.585018 2022] [fcgid:warn] [pid 18172:tid 1368] [client ::1:63418] mod_fcgid: HTTP request length 136000 (so far) exceeds MaxRequestLen (131072), referer: http://localhost:10011/wp-admin/plugin-install.php
