@@ -931,3 +931,58 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\Users\SIMON\Local Sites\wpsmstest\app\public\sms.php on line 13
+[19-Dec-2022 11:49:00 UTC] PHP Warning:  file_get_contents(C:\Users\SIMON\Local Sites\wpsmstest\app\public/wp-content/plugins/my-sms/sms.php): failed to open stream: No such file or directory in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php on line 6635
+[19-Dec-2022 11:49:00 UTC] PHP Stack trace:
+[19-Dec-2022 11:49:00 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin-ajax.php:0
+[19-Dec-2022 11:49:00 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin-ajax.php:187
+[19-Dec-2022 11:49:00 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:476
+[19-Dec-2022 11:49:00 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:331
+[19-Dec-2022 11:49:00 UTC] PHP   5. wp_ajax_delete_plugin() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:307
+[19-Dec-2022 11:49:00 UTC] PHP   6. get_plugin_data() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\ajax-actions.php:4638
+[19-Dec-2022 11:49:00 UTC] PHP   7. get_file_data() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\plugin.php:91
+[19-Dec-2022 11:49:00 UTC] PHP   8. file_get_contents() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:6635
+[19-Dec-2022 11:49:14 UTC] PHP Warning:  fopen(C:\WINDOWS/102906661963a04fbab5f40.tmp): failed to open stream: Permission denied in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php on line 2270
+[19-Dec-2022 11:49:14 UTC] PHP Stack trace:
+[19-Dec-2022 11:49:14 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin-ajax.php:0
+[19-Dec-2022 11:49:14 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin-ajax.php:187
+[19-Dec-2022 11:49:14 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:476
+[19-Dec-2022 11:49:14 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:331
+[19-Dec-2022 11:49:14 UTC] PHP   5. wp_ajax_update_plugin() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:307
+[19-Dec-2022 11:49:14 UTC] PHP   6. Plugin_Upgrader->bulk_upgrade() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\ajax-actions.php:4547
+[19-Dec-2022 11:49:14 UTC] PHP   7. Plugin_Upgrader->run() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-plugin-upgrader.php:345
+[19-Dec-2022 11:49:14 UTC] PHP   8. Plugin_Upgrader->download_package() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-wp-upgrader.php:744
+[19-Dec-2022 11:49:14 UTC] PHP   9. download_url() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\class-wp-upgrader.php:284
+[19-Dec-2022 11:49:14 UTC] PHP  10. wp_tempnam() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\file.php:1136
+[19-Dec-2022 11:49:14 UTC] PHP  11. get_temp_dir() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\includes\file.php:660
+[19-Dec-2022 11:49:14 UTC] PHP  12. wp_is_writable() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:2203
+[19-Dec-2022 11:49:14 UTC] PHP  13. win_is_writable() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:2236
+[19-Dec-2022 11:49:14 UTC] PHP  14. win_is_writable() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:2264
+[19-Dec-2022 11:49:14 UTC] PHP  15. fopen() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\functions.php:2270
+[19-Dec-2022 11:58:34 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Exception([string $message [, long $code [, Throwable $previous = NULL]]]) in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php:113
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php(113): Exception->__construct(Object(stdClass))
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(195): WP_SMS\Gateway\directsend->SendSMS()
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(243): WP_SMS\Outbox_List_Table->process_bulk_action()
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(359): WP_SMS\Outbox_List_Table->prepare_items()
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php on line 113
+[19-Dec-2022 12:15:21 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Exception([string $message [, long $code [, Throwable $previous = NULL]]]) in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php:113
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php(113): Exception->__construct(Object(stdClass))
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(195): WP_SMS\Gateway\directsend->SendSMS()
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(243): WP_SMS\Outbox_List_Table->process_bulk_action()
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(359): WP_SMS\Outbox_List_Table->prepare_items()
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php on line 113
+[19-Dec-2022 12:59:24 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Exception([string $message [, long $code [, Throwable $previous = NULL]]]) in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php:113
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php(113): Exception->__construct(Object(stdClass))
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(195): WP_SMS\Gateway\directsend->SendSMS()
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(243): WP_SMS\Outbox_List_Table->process_bulk_action()
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(359): WP_SMS\Outbox_List_Table->prepare_items()
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php on line 113
+[20-Dec-2022 01:07:44 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Exception([string $message [, long $code [, Throwable $previous = NULL]]]) in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php:113
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php(113): Exception->__construct(Object(stdClass))
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(195): WP_SMS\Gateway\directsend->SendSMS()
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(243): WP_SMS\Outbox_List_Table->process_bulk_action()
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(359): WP_SMS\Outbox_List_Table->prepare_items()
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\gateways\class-wpsms-gateway-directsend.php on line 113

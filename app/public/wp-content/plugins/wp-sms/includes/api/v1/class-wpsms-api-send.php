@@ -82,7 +82,7 @@ class SendSmsApi extends \WP_SMS\RestApi
             $mediaUrls        = array_filter($request->get_param('media_urls'));
 
             if (count($recipientNumbers) === 0) {
-                throw new Exception(__('Could not find any mobile numbers.', 'wp-sms'));
+                throw new Exception(__('Could not find any mobile numbers.', 'wp-sms'));  //yong reviewed for error. 
             }
 
             if (!$request->get_param('message')) {

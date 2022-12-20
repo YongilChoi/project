@@ -4,7 +4,6 @@ namespace WP_SMS\Gateway;
 
 use Exception;
 use WP_Error;
-
 class directsend extends \WP_SMS\Gateway
 {
     private $wsdl_link = "https://directsend.co.kr/index.php/api_v2/sms_change_word";
@@ -50,7 +49,6 @@ class directsend extends \WP_SMS\Gateway
                 'desc' => 'Enter the registered template number.',
             ],
         ];
-
         $this->options['mobile_county_code'] = false;
     }
 
@@ -113,7 +111,7 @@ class directsend extends \WP_SMS\Gateway
             $response = $this->request('POST', "{$this->wsdl_link}", [], $arguments);
 
             if (isset($response->status) && $response->status != '0') {
-                throw new Exception($response->msg);
+                throw new Exception($response->msg);  //yong reviewed for error.. 
             }
 
             //log the result
@@ -121,7 +119,7 @@ class directsend extends \WP_SMS\Gateway
 
             /**
              * Run hook after send sms.
-             *
+             
              * @param string $response result output.
              * @since 2.4
              *
