@@ -65,8 +65,6 @@ class WebhookFactory
         if ($webhooks) {
             return explode(PHP_EOL, $webhooks);
         }
-
-        return [];
     }
 
     /**
