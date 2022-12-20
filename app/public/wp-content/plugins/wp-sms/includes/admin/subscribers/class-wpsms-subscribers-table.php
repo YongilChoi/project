@@ -67,48 +67,6 @@ class Subscribers_List_Table extends \WP_List_Table
         }
     }
 
-    public function column_default2($item, $column_name)
-    {
-        switch ($column_name) {
-            case 'name':
-            case 'mobile':
-                return wp_sms_render_quick_reply($item['mobile']);
-            case 'activate_key':
-                return $item[$column_name];
-
-            case 'group_ID':
-                $group = Newsletter::getGroup($item[$column_name]);
-                if ($group) {
-                    return $group->name;
-                } else {
-                    return '-';
-                }
-
-            case 'date':
-                return sprintf(__('%s <span class="wpsms-time">%s</span>', 'wp-sms'), date_i18n('Y-m-d', strtotime($item[$column_name])), date_i18n('H:i', strtotime($item[$column_name])));
-
-            case 'status':
-                return ($item[$column_name] == '1' ? '<span class="dashicons dashicons-yes wpsms-color-green"></span>' : '<span class="dashicons dashicons-no-alt wpsms-color-red"></span>');
-
-//  added by yichoi       
-            case 'NO': 
-            
-            case 'UserID':
-            case 'Email':
-            case 'CompanyName':
-            case 'CEO':
-            case 'Tel':
-            case 'ETC':
-                return print_r($item, true); //Show the whole array for troubleshooting purposes
-
-
-
-// end 
-            default:
-                return print_r($item, true); //Show the whole array for troubleshooting purposes
-        }
-    }
-
     public function column_name($item)
     {
         /**
@@ -146,50 +104,13 @@ class Subscribers_List_Table extends \WP_List_Table
 
     public function get_columns()
     {
-        // 현재 데이타베이스 테이블 상태 
-            //         열	형	주석
-            // ID	int(10) 자동 증가	
-            // date	datetime NULL	
-            // name	varchar(250) NULL	
-            // mobile	varchar(20)	
-            // status	tinyint(1) NULL	
-            // activate_key	int(11) NULL	
-            // group_ID	int(5) NULL	
-        // $columns = array(
-        //     'cb'       => '<input type="checkbox" />', //Render a checkbox instead of text
-        //     'name'     => __('Name', 'wp-sms'),
-        //     'mobile'   => __('Mobile', 'wp-sms'),
-        //     'group_ID' => __('Group', 'wp-sms'),
-        //     'date'     => __('Date', 'wp-sms'),
-        //     'status'   => __('Status', 'wp-sms'),
-        // );
-        // -------------------------------
-// 새로 추가할 테이블 레코드는 ? 
-            //         열	형	주석
-            // ID	int(10) 자동 증가	
-            // date	datetime NULL	
-            // name	varchar(250) NULL	
-            // mobile	varchar(20)	
-            // status	tinyint(1) NULL	
-            // activate_key	int(11) NULL	
-            // group_ID	int(5) NULL	
-            // No   
-            // UserID
-            //    Email
-            //    CompanyName
-            //    CEO 
-            //    Tel
-
-
-
         $columns = array(
             'cb'       => '<input type="checkbox" />', //Render a checkbox instead of text
-            'NO'     => __('NO', 'wp-sms'),
-            'ID'         => __('ID', 'wp-sms'),
-            'Email'      => __('Email', 'wp-sms'),
-            'CompanyName'=> __('CompnayName', 'wp-sms'),
-            'CEO'        => __('CEO', 'wp-sms'),
-            'Tel'        => __('Tel', 'wp-sms'),
+            'name'     => __('Name', 'wp-sms'),
+            'mobile'   => __('Mobile', 'wp-sms'),
+            'group_ID' => __('Group', 'wp-sms'),
+            'date'     => __('Date', 'wp-sms'),
+            'status'   => __('Status', 'wp-sms'),
         );
 
         if (Option::getOption('newsletter_form_verify')) {
@@ -202,12 +123,12 @@ class Subscribers_List_Table extends \WP_List_Table
     public function get_sortable_columns()
     {
         $sortable_columns = array(
-            'NO'       => array('NO', true),     //true means it's already sorted
-            'ID'     => array('ID', false),     //true means it's already sorted
-            'Email'   => array('Email', false),     //true means it's already sorted
-            'CompanyName' => array('CompanyName', false),     //true means it's already sorted
-            'CEO'     => array('CEO', false),   //true means it's already sorted
-            'Tel'   => array('Tel', false), //true means it's already sorted
+            'ID'       => array('ID', true),     //true means it's already sorted
+            'name'     => array('name', false),     //true means it's already sorted
+            'mobile'   => array('mobile', false),     //true means it's already sorted
+            'group_ID' => array('group_ID', false),     //true means it's already sorted
+            'date'     => array('date', false),   //true means it's already sorted
+            'status'   => array('status', false), //true means it's already sorted
         );
 
         if (Option::getOption('newsletter_form_verify')) {
@@ -235,8 +156,8 @@ class Subscribers_List_Table extends \WP_List_Table
         $current_action = $this->current_action();
         //Detect when a bulk action is being triggered...
         // Search action
-        if (isset($_GET['s'])) {
-            $prepare     = $this->db->prepare("SELECT * from `{$this->tb_prefix}sms_addressbook` WHERE name LIKE %s OR mobile LIKE %s", '%' . $this->db->esc_like($_GET['s']) . '%', '%' . $this->db->esc_like($_GET['s']) . '%');
+        if (isset($_GET['s']) and $_GET['s']) {
+            $prepare     = $this->db->prepare("SELECT * from `{$this->tb_prefix}sms_subscribes` WHERE name LIKE %s OR mobile LIKE %s", '%' . $this->db->esc_like($_GET['s']) . '%', '%' . $this->db->esc_like($_GET['s']) . '%');
             $this->data  = $this->get_data($prepare);
             $this->count = $this->get_total($prepare);
         }
@@ -245,7 +166,7 @@ class Subscribers_List_Table extends \WP_List_Table
         if ('bulk_delete' == $current_action) {
             $get_ids = array_map('sanitize_text_field', $_GET['id']);
             foreach ($get_ids as $id) {
-                $this->db->delete($this->tb_prefix . "sms_addressbook", ['ID' => intval($id)], ['%d']);
+                $this->db->delete($this->tb_prefix . "sms_subscribes", ['ID' => intval($id)], ['%d']);
             }
             $this->data  = $this->get_data();
             $this->count = $this->get_total();
@@ -255,7 +176,7 @@ class Subscribers_List_Table extends \WP_List_Table
         // Single delete action
         if ('delete' == $current_action) {
             $get_id = sanitize_text_field($_GET['ID']);
-            $this->db->delete($this->tb_prefix . "sms_addressbook", ['ID' => intval($get_id)], ['%d']);
+            $this->db->delete($this->tb_prefix . "sms_subscribes", ['ID' => intval($get_id)], ['%d']);
             $this->data  = $this->get_data();
             $this->count = $this->get_total();
             \WP_SMS\Admin\Helper::addFlashNotice(__('Item removed.', 'wp-sms'), 'success', $this->adminUrl);
@@ -267,7 +188,7 @@ class Subscribers_List_Table extends \WP_List_Table
             if ($new_group) {
                 $get_ids = array_map('sanitize_text_field', $_GET['id']);
                 foreach ($get_ids as $id) {
-                    $this->db->update($this->tb_prefix . "sms_addressbook", ['group_ID' => $new_group->ID], ['ID' => intval($id)], ['%d']);
+                    $this->db->update($this->tb_prefix . "sms_subscribes", ['group_ID' => $new_group->ID], ['ID' => intval($id)], ['%d']);
                 }
                 $this->data  = $this->get_data();
                 $this->count = $this->get_total();
@@ -377,21 +298,23 @@ class Subscribers_List_Table extends \WP_List_Table
     }
 
     //set $per_page item as int number
-    //bug fix? 
     public function get_data($query = '')
     {
         $page_number = ($this->get_pagenum() - 1) * $this->limit;
         $orderby     = "";
+        $where       = "";
 
         if (isset($_REQUEST['orderby'])) {
-            $orderby .= "ORDER BY {$this->tb_prefix}sms_addressbook.{$_REQUEST['orderby']} {$_REQUEST['order']}";
+            $orderby .= "ORDER BY {$this->tb_prefix}sms_subscribes.{$_REQUEST['orderby']} {$_REQUEST['order']}";
         }
 
         if (!$query) {
+            if (isset($_GET['group_id']) && $_GET['group_id']) {
+                $group_id = sanitize_text_field($_GET['group_id']);
+                $where    = "WHERE group_ID = {$group_id}";
+            }
 
-            // table 내 데이타 표시시에  DB에서 읽어오는데, 제데로 못읽어와서, 표시가, 배열을 그데로 보여줌. 
-
-            $query = $this->db->prepare("SELECT * FROM {$this->tb_prefix}sms_addressbook {$orderby} LIMIT %d OFFSET %d", $this->limit, $page_number);
+            $query = $this->db->prepare("SELECT * FROM {$this->tb_prefix}sms_subscribes {$where} {$orderby} LIMIT %d OFFSET %d", $this->limit, $page_number);
         } else {
             $query .= $this->db->prepare(" LIMIT %d OFFSET %d", $this->limit, $page_number);
         }
@@ -405,12 +328,28 @@ class Subscribers_List_Table extends \WP_List_Table
     public function get_total($query = '')
     {
         if (!$query) {
-            $query = 'SELECT * FROM `' . $this->tb_prefix . 'sms_addressbook`';
+            $query = 'SELECT * FROM `' . $this->tb_prefix . 'sms_subscribes`';
         }
+
         $result = $this->db->get_results($query, ARRAY_A);
         $result = count($result);
 
         return $result;
     }
 
+    /**
+     * @param $which
+     * @return void
+     */
+    protected function extra_tablenav($which)
+    {
+        switch ($which) {
+            case 'top':
+                echo Helper::loadTemplate('admin/group-filter.php', array(
+                    'groups'   => Newsletter::getGroups(),
+                    'selected' => (isset($_GET['group_id']) ? $_GET['group_id'] : '')
+                ));
+                break;
+        }
+    }
 }

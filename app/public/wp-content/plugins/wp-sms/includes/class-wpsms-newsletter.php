@@ -77,46 +77,33 @@ class Newsletter {
 	/**
 	 * Add Subscriber
 	 *
-	 * @param $name  -> NO
-	 * @param $mobile  -> ID
-	 * @param string $group_id   -> Email
-	 * @param string $status   -> CEO
-	 * @param null $key    -> Tel 
+	 * @param $name
+	 * @param $mobile
+	 * @param string $group_id
+	 * @param string $status
+	 * @param null $key
 	 *
 	 * @return array
 	 */
-	public static function addSubscriber( $NO, $ID, $Email = '', $CEO = '', $Tel = '' ) {
+	public static function addSubscriber( $name, $mobile, $group_id = '', $status = '1', $key = null ) {
 		global $wpdb;
 
 		// Check mobile validity
-		$validate = Helper::checkMobileNumberValidity( $Tel, false, true, $group_id );
+		$validate = Helper::checkMobileNumberValidity( $mobile, false, true, $group_id );
 
 		if ( is_wp_error( $validate ) ) {
 			return array( 'result' => 'error', 'message' => $validate->get_error_message() );
 		}
 
 		$result = $wpdb->insert(
-			$wpdb->prefix . "sms_addressbook",
+			$wpdb->prefix . "sms_subscribes",
 			array(
 				'date'         => WP_SMS_CURRENT_DATE,
-				'NO' 			=> $NO, 
-				'ID'			=> $ID, 
-				'Email' 		=> $Email, 
-				'CEO'			=>$CEO,
-				'Tel'			=> $Tel, 
 				'name'         => $name,
 				'mobile'       => $mobile,
 				'status'       => $status,
 				'activate_key' => $key,
 				'group_ID'     => $group_id,
-
-
-
-
-
-
-
-				
 			)
 		);
 
@@ -154,6 +141,27 @@ class Newsletter {
 			return $result;
 		}
 	}
+
+    public static function getSubscriberByMobile($number)
+    {
+        global $wpdb;
+
+        $metaValue[] = $number;
+
+        // Check if number is international format or not and add country code to meta value
+        if (substr($number, 0, 1) != '+') {
+            $metaValue[] = '+' . $number;
+        }
+
+        $metaValue = "'" . implode("','", $metaValue) . "'";
+        $sql       = "SELECT * FROM `{$wpdb->prefix}sms_subscribes` WHERE mobile IN ({$metaValue})";
+
+        $result = $wpdb->get_row($sql);
+
+        if ($result) {
+            return $result;
+        }
+    }
 
 	/**
 	 * Delete subscriber by number

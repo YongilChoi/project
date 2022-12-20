@@ -19,7 +19,7 @@ class Subscribers
 
         add_thickbox();
 
-        // Add subscriber, 팝업창 여기서.. 
+        // Add subscriber
         if (isset($_POST['wp_add_subscribe'])) {
             $group               = isset($_POST['wpsms_group_name']) ? sanitize_text_field($_POST['wpsms_group_name']) : '';
             $wp_subscribe_name   = isset($_POST['wp_subscribe_name']) ? sanitize_text_field($_POST['wp_subscribe_name']) : '';
@@ -56,6 +56,8 @@ class Subscribers
         //Fetch, prepare, sort, and filter our data...
         $list_table->prepare_items();
 
-        include_once WP_SMS_DIR . "includes/admin/subscribers/subscribers.php";
+        echo \WP_SMS\Helper::loadTemplate('admin/subscribers.php', [
+            'list_table' => $list_table,
+        ]);
     }
 }

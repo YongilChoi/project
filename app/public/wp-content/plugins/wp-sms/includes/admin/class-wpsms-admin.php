@@ -98,6 +98,16 @@ class Admin
         }
 
         /**
+         * Contact Form 7 SMS Notification Tab
+         */
+        if ($screen->id == 'toplevel_page_wpcf7') {
+            wp_enqueue_style('wpsms-select2', WP_SMS_URL . 'assets/css/select2.min.css', true, WP_SMS_VERSION);
+            wp_enqueue_script('wpsms-select2', WP_SMS_URL . 'assets/js/select2.min.js', true, WP_SMS_VERSION);
+            wp_enqueue_style('wpsms-admin');
+            wp_enqueue_script('wpsms-admin', WP_SMS_URL . 'assets/js/admin.js', true, WP_SMS_VERSION);
+        }
+
+        /**
          * Send SMS page's assets
          */
         if ($screen->id === 'toplevel_page_wp-sms') {
@@ -127,7 +137,7 @@ class Admin
         $wp_admin_bar->add_menu(array(
             'id'     => 'wp-send-sms',
             'parent' => 'new-content',
-            'title'  => __('SMS', 'wp-sms'),   /* yichoi */ 
+            'title'  => __('SMS', 'wp-sms'),
             'href'   => WP_SMS_ADMIN_URL . '/admin.php?page=wp-sms'
         ));
     }
@@ -174,10 +184,6 @@ class Admin
         add_submenu_page('wp-sms', __('Settings', 'wp-sms'), __('Settings', 'wp-sms'), 'wpsms_setting', 'wp-sms-settings', array($this->settings, 'render_settings'), 6);
         add_submenu_page('wp-sms', __('Add-Ons', 'wp-sms'), sprintf(__('%sAdd-Ons%s', 'wp-sms'), '<span style="color:#FF7600">', '</span>'), 'manage_options', 'wp-sms-add-ons', array($this, 'add_ons_callback'), 8);
 
-        // added by yichoi to test add submenu : 
-        // test for smartgit.. this hear. 
-
-        add_submenu_page('wp-sms', __('Add-Ons1', 'wp-sms'), sprintf(__('%sAdd-Ons1%s', 'wp-sms'), '<span style="color:#FF7600">', '</span>'), 'manage_options', 'wp-sms-add-ons1', array($this, 'add_ons_callback'), 9);
         // Add styles to menu pages
         foreach ($hook_suffix as $menu => $hook) {
 
@@ -203,7 +209,7 @@ class Admin
     /**
      * Callback send sms page.
      */
-    public function send_sms_callback()  /* yichoi */ 
+    public function send_sms_callback()
     {
         $page = new SMS_Send();
         $page->render_page();

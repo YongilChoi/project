@@ -416,8 +416,7 @@ function wp_sms_get_option($option_name, $pro = false, $setting_name = '')
     return Option::getOption($option_name, $pro, $setting_name);
 }
 
-//reviewed by yichoi
-/**  
+/**
  * Send SMS.
  *
  * @param array $to

@@ -26,7 +26,6 @@ class Gateway
             'nexmo'          => 'nexmo.com',
             'clockworksms'   => 'clockworksms.com',
             'messagebird'    => 'messagebird.com',
-            'smsto'          => 'sms.to',
             'clicksend'      => 'clicksend.com',
             'globalvoice'    => 'global-voice.net',
             'smsapicom'      => 'smsapi.com',
@@ -90,7 +89,6 @@ class Gateway
             'sinch'          => 'sinch.com',
             'linkmobility'   => 'linkmobility.no',
             'smspoh'         => 'smspoh.com',
-            'kakao_allim'    => 'directsend.co.kr'
         ),
         'united states'  => array(
             'telnyx' => 'telnyx.com',
@@ -158,8 +156,8 @@ class Gateway
         'mexico'         => array(
             'smsmasivos' => 'smsmasivos.com.mx',
         ),
-        'korea'         => array(
-            'smsmasivos' => 'smsmasivos.com.mx', //added later... 
+        'iran'           => array(
+            'mehrafraz' => 'mehrafraz.com/fa',
         ),
     );
 
@@ -293,6 +291,18 @@ class Gateway
      * @var array
      */
     public $media = [];
+
+    /**
+     * determine the request is OTP message or standard message
+     *
+     * @var string
+     */
+    public $sms_action = '';
+
+    /**
+     * @var string
+     */
+    public $payload = '';
 
     /**
      * @var
@@ -451,6 +461,14 @@ class Gateway
      */
     public function log($sender, $message, $to, $response, $status = 'success', $media = array())
     {
+        /**
+         * Backward compatibility
+         * @todo Remove this if the length of the sender is increased in database
+         */
+        if (strlen($sender) > 20) {
+            $sender = substr($sender, 0, 20);
+        }
+
         $result = $this->db->insert("{$this->tb_prefix}sms_send", array(
             'date'      => WP_SMS_CURRENT_DATE,
             'sender'    => $sender,
@@ -541,7 +559,6 @@ class Gateway
                 'default' => __('Please select your gateway', 'wp-sms'),
             ),
             'global'               => array(
-                'directsend'       => 'directsend.co.kr', 
                 'reachinteractive' => 'reach-interactive.com',
                 'octopush'         => 'octopush.com',
                 'experttexting'    => 'experttexting.com',
@@ -566,6 +583,7 @@ class Gateway
                 'aobox'            => 'aobox.it',
                 'sendapp'          => 'Sendapp SMS',
                 'sendappWhatsApp'  => 'Sendapp Whathapp',
+                'smsto'            => 'sms.to',
             ),
             'united kingdom'       => array(
                 'reachinteractive' => 'reach-interactive.com',
@@ -650,7 +668,8 @@ class Gateway
                 'smsbox' => 'smsbox.be'
             ),
             'united arab emirates' => array(
-                'callifony' => 'callifony.com'
+                'callifony'       => 'callifony.com',
+                'smartsmsgateway' => 'smartsmsgateway.com',
             ),
             'india'                => array(
                 'tubelightcommunications' => 'tubelightcommunications.com',
@@ -829,7 +848,7 @@ class Gateway
             'kenya'                => array(
                 'hostpinnacle' => 'hostpinnacle.co.ke',
             ),
-            'korea'                => array(
+            'south korea'          => array(
                 'directsend' => 'directsend.co.kr',
             ),
         );
@@ -1038,5 +1057,25 @@ class Gateway
         $responseJson = json_decode($responseBody);
 
         return ($responseJson == null) ? $responseBody : $responseJson;
+    }
+
+    /**
+     * Fetch the template ID from message body
+     *
+     *
+     * @return array|void
+     * @example In the message body "Hello World|1234" It returns array('template_id' => 1234, 'message' => 'Hello World')
+     *
+     */
+    protected function getTemplateIdAndMessageBody()
+    {
+        $message_body = explode("|", $this->msg);
+
+        if (isset($message_body[1]) && $message_body[1]) {
+            return array(
+                'template_id' => $message_body[1],
+                'message'     => $message_body[0]
+            );
+        }
     }
 }
