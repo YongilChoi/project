@@ -53,6 +53,19 @@ class Outbox_List_Table extends \WP_List_Table
 						</details>';
 
                 return $html;
+            case 'response':
+                $html = '<details>
+						  <summary>' . __('View more...', 'wp-sms') . '</summary>
+						  <p>' . $item[$column_name] . '</p>
+						</details>';
+
+                return $html;
+            case 'status':
+                if ($item[$column_name] == 'success') {
+                    return '<span class="wp_sms_status_success">' . __('Success', 'wp-sms') . '</span>';
+                } else {
+                    return '<span class="wp_sms_status_fail">' . __('Fail', 'wp-sms') . '</span>';
+                }
             default:
                 return print_r($item, true); //Show the whole array for troubleshooting purposes
         }
@@ -125,7 +138,8 @@ class Outbox_List_Table extends \WP_List_Table
             'date'      => __('Date', 'wp-sms'),
             'message'   => __('Message', 'wp-sms'),
             'recipient' => __('Recipient', 'wp-sms'),
-            'media'     => __('Media', 'wp-sms'),
+            'response'  => __('Response', 'wp-sms'),
+           // 'media'     => __('Media', 'wp-sms'),
             'status'    => __('Status', 'wp-sms'),
         );
     }
@@ -138,7 +152,7 @@ class Outbox_List_Table extends \WP_List_Table
             'date'      => array('date', false),  //true means it's already sorted
             'message'   => array('message', false),   //true means it's already sorted
             'recipient' => array('recipient', false), //true means it's already sorted
-            'media'     => array('media', false), //true means it's already sorted
+          //  'media'     => array('media', false), //true means it's already sorted
             'status'    => array('status', false) //true means it's already sorted
 
         );
@@ -184,7 +198,7 @@ class Outbox_List_Table extends \WP_List_Table
             \WP_SMS\Admin\Helper::addFlashNotice(__('Item removed.', 'wp-sms'), 'success', $this->adminUrl);
         }
 
-        // Resend sms
+        // Resend sms, 만약 카카오가 붙으면,, 재전송시에 올바른 형태의 주소가 아니라고 에러나옴. 
         if ('resend' == $this->current_action()) {
             global $sms;
             $error    = null;

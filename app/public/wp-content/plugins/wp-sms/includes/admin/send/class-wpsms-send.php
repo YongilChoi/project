@@ -33,7 +33,7 @@ class SMS_Send
      */
     public function render_page()
     {
-        $woocommerceCustomers = [];
+    /*    $woocommerceCustomers = [];
         if (class_exists('woocommerce') and class_exists('WP_SMS\Pro\WooCommerce\Helper')) {
             $woocommerceCustomers = \WP_SMS\Pro\WooCommerce\Helper::getCustomersNumbers();
         }
@@ -53,5 +53,6 @@ class SMS_Send
             'smsObject'               => $this->sms,
             'gatewayCredit'           => $this->sms::credit(),
         ]);
+     */
     }
 }
