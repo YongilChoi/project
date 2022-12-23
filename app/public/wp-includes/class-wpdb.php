@@ -1807,7 +1807,7 @@ class wpdb {
 				$this->dbh = mysql_connect( $this->dbhost, $this->dbuser, $this->dbpassword, $new_link, $client_flags );
 			} else {
 				// phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
-				$this->dbh = @mysql_connect( $this->dbhost, $this->dbuser, $this->dbpassword, $new_link, $client_flags );
+				$this->dbh = @mysql_connect( $this->dbhost, $this->dbuser, $this->dbpassword, $new_link, $client_flags );  //fatal error by reviewed 12-23
 			}
 		}
 

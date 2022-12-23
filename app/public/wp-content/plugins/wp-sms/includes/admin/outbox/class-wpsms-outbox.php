@@ -47,6 +47,9 @@ class Outbox_List_Table extends \WP_List_Table
             case 'message':
                 return $item[$column_name];
             case 'recipient':
+            	/*if(isset( $item[$column_name] == true ){ 
+                	$recipient_count = count($item[$column_name]) 
+                } */
                 $html = '<details>
 						  <summary>' . __('View more...', 'wp-sms') . '</summary>
 						  <p>' . wp_sms_render_quick_reply($item[$column_name]) . '</p>
@@ -119,7 +122,7 @@ class Outbox_List_Table extends \WP_List_Table
         );
     }
 
-    function column_cb($item)
+    function column_cb($item)  //체크박스 
     {
         return sprintf(
             '<input type="checkbox" name="%1$s[]" value="%2$s" />',
