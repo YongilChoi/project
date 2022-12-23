@@ -1,7 +1,8 @@
 [PHP]
 engine = On
 {{#if os.windows}}
-extension_dir="{{extension_dir}}"
+extension_dir="{{extensionsDir}}"
+sys_temp_dir="C:\Windows\TEMP"
 {{/if}}
 
 ; Maxes
@@ -72,9 +73,11 @@ upload_max_filesize = 300M
 allow_url_fopen = On
 allow_url_include = Off
 default_socket_timeout = 60
+openssl.cafile="{{wpCaBundlePath}}"
 
 {{#if os.windows}}
 ; Load extensions
+extension=php_fileinfo.dll
 extension=php_curl.dll
 extension=php_gettext.dll
 extension=php_openssl.dll
@@ -127,6 +130,9 @@ pdo_mysql.default_port = {{mysql.port}}
 [filter]
 [iconv]
 [intl]
+{{#if os.windows}}
+extension = php_intl.dll
+{{/if}}
 [sqlite]
 [sqlite3]
 [Pcre]
@@ -195,12 +201,20 @@ ldap.max_links = -1
 [mcrypt]
 [dba]
 
+[imagick]
+{{#if os.windows}}
+extension = php_imagick.dll
+{{/if}}
+{{#if intelChipMac}}
+extension = {{extensionsDir}}/imagick.so
+{{/if}}
+
 {{#unless apache}}
 [opcache]
 {{#if os.windows}}
 zend_extension = php_opcache.dll
 {{else}}
-zend_extension = {{extensions.opcache}}
+zend_extension = {{extensionsDir}}/opcache.so
 {{/if}}
 
 opcache.enable=1
@@ -211,22 +225,17 @@ opcache.enable_cli=1
 {{#if os.windows}}
 zend_extension = php_xdebug.dll
 {{else}}
-zend_extension = {{extensions.xdebug}}
+zend_extension = {{extensionsDir}}/xdebug.so
 {{/if}}
 
-xdebug.remote_enable=1
-xdebug.remote_connect_back=Off
-xdebug.remote_port="9000"
-xdebug.profiler_enable=0
+{{#if xdebugEnabled}}
+xdebug.mode=debug,develop
+{{else}}
+xdebug.mode=off
+{{/if}}
+xdebug.client_port=9003
+xdebug.start_with_request=yes
+xdebug.discover_client_host=yes
 
 [Pcre]
 pcre.jit=0 {{! Disable due to limitation with macOS Notarization }}
-
-[localbyflywheel]
-xdebug.scream = 1
-xdebug.show_local_vars = 1
-xdebug.remote_autostart = 1
-xdebug.remote_connect_back = 1
-xdebug.idekey = VSCODE
-
-openssl.cafile="C:\Users\SIMON\Local Sites\cacert.pem"
