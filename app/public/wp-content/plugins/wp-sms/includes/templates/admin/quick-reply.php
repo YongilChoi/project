@@ -10,6 +10,20 @@
     <div class="wpsms-wrap wpsms-quick-reply-popup">
         <div class="wp-sms-popup-messages"></div>
     </div>
+//--------------------
+
+//구독자 목록을 가져온다. 
+
+
+
+
+
+
+
+
+
+
+
 
     <form method="post" class="js-wpSmsQuickReply" <?php if (isset($reload)) : echo 'data-reload=' . $reload; endif; ?>>
         <table>
@@ -33,4 +47,6 @@
             <input type="submit" class="button-primary" name="SendSMS" value="<?php _e('Reply', 'wp-sms'); ?>"/>
         </p>
     </div>
+
+    //--
 </div>

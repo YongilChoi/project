@@ -49,7 +49,7 @@ class Outbox_List_Table extends \WP_List_Table
             case 'recipient':
                 $html = '<details>
 						  <summary>' . __('View more...', 'wp-sms') . '</summary>
-						  <p>' . wp_sms_render_quick_reply($item[$column_name]) . '</p>
+						  <p>' . wp_sms_render_quick_total_reply($item[$column_name]) . '</p>
 						</details>';
 
                 return $html;
@@ -62,10 +62,10 @@ class Outbox_List_Table extends \WP_List_Table
      * @param $item
      * @return string|void
      */
-    public function column_media($item)
+   /* public function column_media($item)
     {
         return wp_sms_render_media_list($item['media']);
-    }
+    } */
 
     /**
      * @param $item
@@ -125,7 +125,7 @@ class Outbox_List_Table extends \WP_List_Table
             'date'      => __('Date', 'wp-sms'),
             'message'   => __('Message', 'wp-sms'),
             'recipient' => __('Recipient', 'wp-sms'),
-            'media'     => __('Media', 'wp-sms'),
+          //  'media'     => __('Media', 'wp-sms'),
             'status'    => __('Status', 'wp-sms'),
         );
     }
@@ -138,7 +138,7 @@ class Outbox_List_Table extends \WP_List_Table
             'date'      => array('date', false),  //true means it's already sorted
             'message'   => array('message', false),   //true means it's already sorted
             'recipient' => array('recipient', false), //true means it's already sorted
-            'media'     => array('media', false), //true means it's already sorted
+        //    'media'     => array('media', false), //true means it's already sorted
             'status'    => array('status', false) //true means it's already sorted
 
         );
