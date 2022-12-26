@@ -59,9 +59,6 @@ class Subscribers_List_Table extends \WP_List_Table
             case 'date':
                 return sprintf(__('%s <span class="wpsms-time">%s</span>', 'wp-sms'), date_i18n('Y-m-d', strtotime($item[$column_name])), date_i18n('H:i', strtotime($item[$column_name])));
 
-            case 'status':
-                return ($item[$column_name] == '1' ? '<span class="dashicons dashicons-yes wpsms-color-green"></span>' : '<span class="dashicons dashicons-no-alt wpsms-color-red"></span>');
-
             default:
                 return print_r($item, true); //Show the whole array for troubleshooting purposes
         }
@@ -349,9 +346,8 @@ class Subscribers_List_Table extends \WP_List_Table
         }
 
         $result = $this->db->get_results($query, ARRAY_A);
-        $result = count($result);
 
-        return $result;
+        return count($result);
     }
 
     /**
@@ -368,6 +364,13 @@ class Subscribers_List_Table extends \WP_List_Table
                     'groups'   => Newsletter::getGroups(),
                     'selected' => (isset($_GET['group_id']) ? $_GET['group_id'] : '')
                 ));
+
+                // Filter by Country
+                echo Helper::loadTemplate('admin/country-filter.php', array(
+                    'countries' => Newsletter::filterSubscribersByCountry(),
+                    'selected'  => (isset($_GET['country_code']) ? $_GET['country_code'] : '')
+                ));
+
                 break;
         }
     }

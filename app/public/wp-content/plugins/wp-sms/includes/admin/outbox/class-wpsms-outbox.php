@@ -47,28 +47,12 @@ class Outbox_List_Table extends \WP_List_Table
             case 'message':
                 return $item[$column_name];
             case 'recipient':
-            	/*if(isset( $item[$column_name] == true ){ 
-                	$recipient_count = count($item[$column_name]) 
-                } */
                 $html = '<details>
 						  <summary>' . __('View more...', 'wp-sms') . '</summary>
 						  <p>' . wp_sms_render_quick_reply($item[$column_name]) . '</p>
 						</details>';
 
                 return $html;
-            case 'response':
-                $html = '<details>
-						  <summary>' . __('View more...', 'wp-sms') . '</summary>
-						  <p>' . $item[$column_name] . '</p>
-						</details>';
-
-                return $html;
-            case 'status':
-                if ($item[$column_name] == 'success') {
-                    return '<span class="wp_sms_status_success">' . __('Success', 'wp-sms') . '</span>';
-                } else {
-                    return '<span class="wp_sms_status_fail">' . __('Fail', 'wp-sms') . '</span>';
-                }
             default:
                 return print_r($item, true); //Show the whole array for troubleshooting purposes
         }
@@ -112,7 +96,7 @@ class Outbox_List_Table extends \WP_List_Table
 
         //Return the title contents
         return sprintf(
-            '%1$s <span style="color:silver">(ID: %2$s)</span>%3$s',
+            '%1$s <span style="color:silver">(ID: #%2$s)</span>%3$s',
             /*$1%s*/
             $item['sender'],
             /*$2%s*/
@@ -122,7 +106,7 @@ class Outbox_List_Table extends \WP_List_Table
         );
     }
 
-    function column_cb($item)  //체크박스 
+    function column_cb($item)
     {
         return sprintf(
             '<input type="checkbox" name="%1$s[]" value="%2$s" />',
@@ -141,8 +125,7 @@ class Outbox_List_Table extends \WP_List_Table
             'date'      => __('Date', 'wp-sms'),
             'message'   => __('Message', 'wp-sms'),
             'recipient' => __('Recipient', 'wp-sms'),
-            'response'  => __('Response', 'wp-sms'),
-           // 'media'     => __('Media', 'wp-sms'),
+            'media'     => __('Media', 'wp-sms'),
             'status'    => __('Status', 'wp-sms'),
         );
     }
@@ -155,7 +138,7 @@ class Outbox_List_Table extends \WP_List_Table
             'date'      => array('date', false),  //true means it's already sorted
             'message'   => array('message', false),   //true means it's already sorted
             'recipient' => array('recipient', false), //true means it's already sorted
-          //  'media'     => array('media', false), //true means it's already sorted
+            'media'     => array('media', false), //true means it's already sorted
             'status'    => array('status', false) //true means it's already sorted
 
         );
@@ -201,15 +184,16 @@ class Outbox_List_Table extends \WP_List_Table
             \WP_SMS\Admin\Helper::addFlashNotice(__('Item removed.', 'wp-sms'), 'success', $this->adminUrl);
         }
 
-        // Resend sms, 만약 카카오가 붙으면,, 재전송시에 올바른 형태의 주소가 아니라고 에러나옴. 
+        // Resend sms
         if ('resend' == $this->current_action()) {
             global $sms;
-            $error    = null;
-            $get_id   = sanitize_text_field($_GET['ID']);
-            $result   = $this->db->get_row($this->db->prepare("SELECT * from `{$this->tb_prefix}sms_send` WHERE ID =%d", intval($get_id)));
-            $sms->to  = array($result->recipient);
-            $sms->msg = $result->message;
-            $error    = $sms->SendSMS();
+            $error     = null;
+            $get_id    = sanitize_text_field($_GET['ID']);
+            $result    = $this->db->get_row($this->db->prepare("SELECT * from `{$this->tb_prefix}sms_send` WHERE ID =%d", intval($get_id)));
+            $sms->to   = array($result->recipient);
+            $sms->msg  = $result->message;
+            $sms->from = $result->sender;
+            $error     = $sms->SendSMS();
 
             if (is_wp_error($error)) {
                 \WP_SMS\Admin\Helper::addFlashNotice(esc_html($error->get_error_message()), 'error', $this->adminUrl);

@@ -157,7 +157,7 @@ class Settings
             /*
              * Pro Pack tabs
              */
-       /*     'pro_wordpress'        => __('2FA & Login', 'wp-sms'),
+            'pro_wordpress'        => __('2FA & Login', 'wp-sms'),
             'pro_buddypress'       => __('BuddyPress', 'wp-sms'),
             'pro_woocommerce'      => __('WooCommerce', 'wp-sms'),
             'pro_gravity_forms'    => __('Gravity Forms', 'wp-sms'),
@@ -166,7 +166,7 @@ class Settings
             'pro_wp_job_manager'   => __('WP Job Manager', 'wp-sms'),
             'pro_awesome_support'  => __('Awesome Support', 'wp-sms'),
             'pro_ultimate_members' => __('Ultimate Members', 'wp-sms'),
-       */
+
             'licenses' => __('Licenses', 'wp-sms')
         );
 
@@ -1533,7 +1533,7 @@ class Settings
                 ),
                 'clean_numbers'             => array(
                     'id'      => 'clean_numbers',
-                    'name'    => __('Clean Numbers', 'wp-sms'),
+                    'name'    => __('Clean The Numbers', 'wp-sms'),
                     'type'    => 'checkbox',
                     'options' => $options,
                     'desc'    => __('You can enable this option to remove spaces from numbers before sending them to API.', 'wp-sms')
@@ -2398,10 +2398,10 @@ class Settings
                             echo '</a>' . $proLockIcon . '</li>';
                         } ?>
 
-                      <!--  <li class="tab-link"><a target="_blank" href="<?php echo WP_SMS_SITE; ?>/documentation/"><?php _e('Documentation', 'wp-sms'); ?></a></li> -->
-                      <!--  <li class="tab-link"><a target="_blank" href="<?php echo WP_SMS_SITE; ?>/gateways/add-new/"><?php _e('Suggest / Add your gateway', 'wp-sms'); ?></a></li> -->
-                      <!--   <li class="tab-link"><a target="_blank" href="<?php echo WP_SMS_SITE; ?>/zapier-integration"><?php _e('Zapier Integration', 'wp-sms'); ?></a></li>  -->
-                      <!--  <li class="tab-company-logo"><a target="_blank" href="https://veronalabs.com/?utm_source=wp_sms&utm_medium=display&utm_campaign=wordpress"><img src="<?php echo plugins_url('wp-sms/assets/images/veronalabs.svg'); ?>"/></a></li> -->
+                        <li class="tab-link"><a target="_blank" href="<?php echo WP_SMS_SITE; ?>/documentation/"><?php _e('Documentation', 'wp-sms'); ?></a></li>
+                        <li class="tab-link"><a target="_blank" href="<?php echo WP_SMS_SITE; ?>/gateways/add-new/"><?php _e('Suggest / Add your gateway', 'wp-sms'); ?></a></li>
+                        <li class="tab-link"><a target="_blank" href="<?php echo WP_SMS_SITE; ?>/zapier-integration"><?php _e('Zapier Integration', 'wp-sms'); ?></a></li>
+                        <li class="tab-company-logo"><a target="_blank" href="https://veronalabs.com/?utm_source=wp_sms&utm_medium=display&utm_campaign=wordpress"><img src="<?php echo plugins_url('wp-sms/assets/images/veronalabs.svg'); ?>"/></a></li>
                     </ul>
                     <?php echo settings_errors('wpsms-notices'); ?>
                     <div class="wpsms-tab-content<?php echo $contentRestricted ? ' pro-not-installed' : ''; ?> <?php echo $active_tab . '_settings_tab' ?>">
