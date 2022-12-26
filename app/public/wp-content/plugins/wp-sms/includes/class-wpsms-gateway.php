@@ -476,7 +476,7 @@ class Gateway
             'recipient' => implode(',', $to),
             'response'  => var_export($response, true),
             'media'     => serialize($media),
-            'status'    => $status,   //성공 실패 표시 
+            'status'    => $status,
         ));
 
         /**
@@ -543,7 +543,7 @@ class Gateway
     {
         $numbers = array();
         foreach ($recipients as $recipient) {
-            $numbers[] = str_replace(' ', '', $recipient);
+            $numbers[] = str_replace(array(' ', '-', ','), '', $recipient);
         }
 
         return $numbers;

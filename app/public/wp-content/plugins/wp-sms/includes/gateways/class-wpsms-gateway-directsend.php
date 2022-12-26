@@ -3,7 +3,6 @@
 namespace WP_SMS\Gateway;
 
 use Exception;
-use WP_Error;
 
 class directsend extends \WP_SMS\Gateway
 {
@@ -50,8 +49,6 @@ class directsend extends \WP_SMS\Gateway
                 'desc' => 'Enter the registered template number.',
             ],
         ];
-
-        $this->options['mobile_county_code'] = false;
     }
 
     public function SendSMS()
@@ -85,11 +82,15 @@ class directsend extends \WP_SMS\Gateway
 
         try {
 
+            $numbers = array_map(function ($number) {
+                return $this->clean_number($number);
+            }, $this->to);
+
             $recipients = array_map(function ($recipient) {
                 return array(
                     'mobile' => $recipient
                 );
-            }, $this->to);
+            }, $numbers);
 
             $from_explode = explode('|', $this->from);
 
@@ -112,12 +113,12 @@ class directsend extends \WP_SMS\Gateway
 
             $response = $this->request('POST', "{$this->wsdl_link}", [], $arguments);
 
-            if (isset($response->status) && $response->status != '0') {
-                throw new Exception($response->msg);
+            if (isset($response->status) && !in_array($response->status, [0, 1])) {
+                throw new Exception($response->message);
             }
 
             //log the result
-            $this->log($this->from, $this->msg, $this->to, $response);
+            $this->log($this->from, $this->msg, $numbers, $response);
 
             /**
              * Run hook after send sms.
@@ -130,10 +131,10 @@ class directsend extends \WP_SMS\Gateway
 
             return $response;
 
-        } catch (Exception $e) {
-            $this->log($this->from, $this->msg, $this->to, $e->getMessage(), 'error');
+        } catch (\Exception $e) {
+            $this->log($this->from, $this->msg, $numbers, $e->getMessage(), 'error');
 
-            return new WP_Error('send-sms', $e->getMessage());
+            return new \WP_Error('send-sms', $e->getMessage());
         }
     }
 
@@ -142,14 +143,29 @@ class directsend extends \WP_SMS\Gateway
         try {
             // Check username and password
             if (!$this->username or !$this->has_key) {
-                throw new Exception(__('The Username/API key for this gateway is not set.', 'wp-sms'));
+                throw new \Exception(__('The Username/API key for this gateway is not set.', 'wp-sms'));
             }
             return 1;
 
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $error_message = $e->getMessage();
-            return new WP_Error('account-credit', $error_message);
+            return new \WP_Error('account-credit', $error_message);
         }
+    }
+
+    /**
+     * remove the country code
+     *
+     * @param string $number
+     *
+     * @return string
+     */
+    public function clean_number($number)
+    {
+        $number = str_replace('+82', '', $number);
+        $number = trim($number);
+
+        return $number;
     }
 
 }
