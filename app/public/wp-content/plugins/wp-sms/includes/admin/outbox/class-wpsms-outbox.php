@@ -48,7 +48,7 @@ class Outbox_List_Table extends \WP_List_Table
                 return $item[$column_name];
             case 'recipient':
                 $html = '<details>
-						  <summary>' . __('View more...', 'wp-sms') . '</summary>
+					
 						  <p>' . wp_sms_render_quick_total_reply($item[$column_name]) . '</p>
 						</details>';
 

@@ -9,6 +9,9 @@
 
     <div class="wpsms-wrap wpsms-quick-reply-popup">
         <div class="wp-sms-popup-messages"></div>
+        <?php echo Helper::loadTemplate('admin/quick-reply.php', array('reload' => 'true')); ?>
+        <p><?php wp_sms_render_quick_reply('+12025550191'); ?></p>
+
     </div>
 
 

@@ -50,7 +50,10 @@ class Admin
 
         $screen = get_current_screen();
 
-        wp_register_script('wpsms-quick-reply', WP_SMS_URL . 'assets/js/quick-reply.js', true, WP_SMS_VERSION);
+        wp_register_script('wpsms-quick-reply', WP_SMS_URL . 'assets/js/quick-reply.js', true, WP_SMS_VERSION);  //wpsms-quick-reply script를 admin 
+
+        wp_register_script('wpsms-quick-total-reply', WP_SMS_URL . 'assets/js/quick-total-reply.js', true, WP_SMS_VERSION);  //wpsms-quick-reply script를 admin 
+        // 자산에 등록.. 
 
         // Register main plugin style
         wp_register_style('wpsms-admin', WP_SMS_URL . 'assets/css/admin.css', true, WP_SMS_VERSION);
@@ -171,7 +174,7 @@ class Admin
         $hook_suffix['send_sms'] = add_submenu_page('wp-sms', __('Send SMS', 'wp-sms'), __('Send SMS', 'wp-sms'), 'wpsms_sendsms', 'wp-sms', array($this, 'send_sms_callback'), 1);
 
         $hook_suffix['outbox'] = add_submenu_page('wp-sms', __('Outbox', 'wp-sms'), __('Outbox', 'wp-sms'), 'wpsms_outbox', 'wp-sms-outbox', array($this, 'outbox_callback'), 2);
-        $hook_suffix['inbox']  = add_submenu_page('wp-sms', __('Inbox', 'wp-sms'), __('Inbox', 'wp-sms') . $notificationBubble, 'wpsms_inbox', 'wp-sms-inbox', array($this, 'inbox_callback'), 3);
+       // $hook_suffix['inbox']  = add_submenu_page('wp-sms', __('Inbox', 'wp-sms'), __('Inbox', 'wp-sms') . $notificationBubble, 'wpsms_inbox', 'wp-sms-inbox', array($this, 'inbox_callback'), 3);
 
         $hook_suffix['subscribers'] = add_submenu_page('wp-sms', __('Subscribers', 'wp-sms'), __('Subscribers', 'wp-sms'), 'wpsms_subscribers', 'wp-sms-subscribers', array($this, 'subscribers_callback'), 4);
         $hook_suffix['groups']      = add_submenu_page('wp-sms', __('Groups', 'wp-sms'), __('Groups', 'wp-sms'), 'wpsms_subscribers', 'wp-sms-subscribers-group', array($this, 'groups_callback'), 5);
