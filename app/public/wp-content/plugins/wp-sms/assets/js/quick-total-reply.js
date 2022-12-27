@@ -21,7 +21,7 @@ let quickReply = {
         this.fromNumber = jQuery('.js-replyModalToggle')
         this.toNumber = jQuery('.js-wpSmsQuickReplyTo')
         this.replyMessage = jQuery('.js-wpSmsQuickReplyMessage')
-       // this.submitButton = jQuery('.quick-reply-submit')
+        this.submitButton = jQuery('.quick-reply-submit')
     },
 
     addEventListener: function () {

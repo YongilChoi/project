@@ -9,8 +9,24 @@
 
     <div class="wpsms-wrap wpsms-quick-reply-popup">
         <div class="wp-sms-popup-messages"></div>
-        <?php echo Helper::loadTemplate('admin/quick-reply.php', array('reload' => 'true')); ?>
+        <!-- <?php echo Helper::loadTemplate('admin/quick-reply.php', array('reload' => 'true')); ?>
         <p><?php wp_sms_render_quick_reply('+12025550191'); ?></p>
+        <?php $list_table->display(); ?> -->
+
+        
+       <?php include_once WP_SMS_DIR . 'includes/admin/subscribers/class-wpsms-subscribers-table.php'; ?>
+
+       <?php //Create an instance of our package class...
+        $list_table = new Subscribers_List_Table();
+
+        //Fetch, prepare, sort, and filter our data...
+        $list_table->prepare_items();
+
+        echo \WP_SMS\Helper::loadTemplate('admin/subscribers.php', [
+            'list_table' => $list_table,
+        ]);
+        $list_table->display();
+        ?>
 
     </div>
 

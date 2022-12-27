@@ -7684,3 +7684,377 @@ Stack trace:
 [27-Dec-2022 08:25:19 UTC] PHP   7. WP_SMS\Outbox_List_Table->prepare_items() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:360
 [27-Dec-2022 08:25:19 UTC] PHP   8. WP_SMS\Outbox_List_Table->process_bulk_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:244
 [27-Dec-2022 08:25:19 UTC] PHP   9. WP_SMS\Gateway\directsend->SendSMS() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:196
+[27-Dec-2022 08:57:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 08:57:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 08:59:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 08:59:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:02:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:02:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\subscribers.php(11): WP_SMS\Helper::loadTemplate('admin/quick-rep...')
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\subscribers\class-wpsms-subscribers.php(60): WP_SMS\Helper::loadTemplate('admin/subscribe...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(248): WP_SMS\Subscribers->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hoo in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:02:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:02:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:32:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:18
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 18
+[27-Dec-2022 09:33:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:18
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 18
+[27-Dec-2022 09:33:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:18
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 18
+[27-Dec-2022 09:33:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:18
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 18
+[27-Dec-2022 09:34:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:19
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 19
+[27-Dec-2022 09:34:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers_List_Table' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:19
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308):  in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 19
+[27-Dec-2022 09:49:27 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 49
+[27-Dec-2022 09:49:27 UTC] PHP Stack trace:
+[27-Dec-2022 09:49:27 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:49:27 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:49:27 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:49:27 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:49:27 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:49:27 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:49:27 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:49:27 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:49:27 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:49:52 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 49
+[27-Dec-2022 09:49:52 UTC] PHP Stack trace:
+[27-Dec-2022 09:49:52 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:49:52 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:49:52 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:49:52 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:49:52 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:49:52 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:49:52 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:49:52 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:49:52 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:50:35 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_SMS_POPUP\Helper' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:54
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308): WP_ in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 54
+[27-Dec-2022 09:51:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:52
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308): WP_SMS\Admin->ou in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 52
+[27-Dec-2022 09:51:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:52
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308): WP_SMS\Admin->ou in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 52
+[27-Dec-2022 09:51:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:52
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308): WP_SMS\Admin->ou in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 52
+[27-Dec-2022 09:52:47 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:52:47 UTC] PHP Stack trace:
+[27-Dec-2022 09:52:47 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:52:47 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:52:47 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:52:47 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:52:47 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:52:47 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:52:47 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:52:47 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:52:47 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:52:47 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:52:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:47
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:53:19 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:53:19 UTC] PHP Stack trace:
+[27-Dec-2022 09:53:19 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:53:19 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:53:19 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:53:19 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:53:19 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:53:19 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:53:19 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:53:19 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:53:19 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:53:19 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:53:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:47
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:53:49 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:53:49 UTC] PHP Stack trace:
+[27-Dec-2022 09:53:49 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:53:49 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:53:49 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:53:49 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:53:49 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:53:49 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:53:49 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:53:49 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:53:49 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:53:49 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:53:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:47
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:54:03 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:54:03 UTC] PHP Stack trace:
+[27-Dec-2022 09:54:03 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:54:03 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:54:03 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:54:03 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:54:03 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:54:03 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:54:03 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:54:03 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:54:03 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:54:03 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:54:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:47
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:54:36 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:54:36 UTC] PHP Stack trace:
+[27-Dec-2022 09:54:36 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:54:36 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:54:36 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:54:36 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:54:36 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:54:36 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:54:36 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:54:36 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:54:36 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:54:36 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:54:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:47
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 47
+[27-Dec-2022 09:54:57 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:54:57 UTC] PHP Stack trace:
+[27-Dec-2022 09:54:57 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:54:57 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:54:57 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:54:57 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:54:57 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:54:57 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:54:57 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:54:57 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:54:57 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:54:57 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:54:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:55:17 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:55:17 UTC] PHP Stack trace:
+[27-Dec-2022 09:55:17 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:55:17 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:55:17 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:55:17 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:55:17 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:55:17 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:55:17 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:55:17 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:55:17 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:55:17 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:55:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:56:18 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:56:18 UTC] PHP Stack trace:
+[27-Dec-2022 09:56:18 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:56:18 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:56:18 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:56:18 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:56:18 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:56:18 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:56:18 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:56:18 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:56:18 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:56:18 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:56:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:58:23 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:58:23 UTC] PHP Stack trace:
+[27-Dec-2022 09:58:23 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:58:23 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:58:23 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:58:23 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:58:23 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:58:23 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:58:23 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:58:23 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:58:23 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:58:23 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:58:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:58:30 UTC] PHP Notice:  Undefined variable: list_table in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 09:58:30 UTC] PHP Stack trace:
+[27-Dec-2022 09:58:30 UTC] PHP   1. {main}() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:0
+[27-Dec-2022 09:58:30 UTC] PHP   2. do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-admin\admin.php:259
+[27-Dec-2022 09:58:30 UTC] PHP   3. WP_Hook->do_action() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\plugin.php:517
+[27-Dec-2022 09:58:30 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:332
+[27-Dec-2022 09:58:30 UTC] PHP   5. WP_SMS\Admin->outbox_callback() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php:308
+[27-Dec-2022 09:58:30 UTC] PHP   6. WP_SMS\Outbox->render_page() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php:227
+[27-Dec-2022 09:58:30 UTC] PHP   7. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php:363
+[27-Dec-2022 09:58:30 UTC] PHP   8. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:58:30 UTC] PHP   9. WP_SMS\Helper::loadTemplate() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php:10
+[27-Dec-2022 09:58:30 UTC] PHP  10. require() C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php:43
+[27-Dec-2022 09:58:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function display() on null in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:36
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308 in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 36
+[27-Dec-2022 10:01:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Subscribers' not found in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php:41
+Stack trace:
+#0 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require()
+#1 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\outbox.php(10): WP_SMS\Helper::loadTemplate('admin/quick-rep...', Array)
+#2 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\src\Helper.php(43): require('C:\\Users\\SIMON\\...')
+#3 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\outbox\class-wpsms-outbox.php(363): WP_SMS\Helper::loadTemplate('admin/outbox.ph...', Array)
+#4 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\admin\class-wpsms-admin.php(227): WP_SMS\Outbox->render_page()
+#5 C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-includes\class-wp-hook.php(308): WP_SMS\Admi in C:\Users\SIMON\Local Sites\wpsmstest\app\public\wp-content\plugins\wp-sms\includes\templates\admin\quick-reply.php on line 41

@@ -545,7 +545,7 @@ function wp_sms_render_quick_reply($number, $group_id = false)
 function wp_sms_render_quick_total_reply($number, $group_id = false)
 {
     add_thickbox();
-    wp_enqueue_script('wpsms-quick-total-reply');
+    wp_enqueue_script('wpsms-quick-reply');
 
     $numbers          = explode(',', $number);
     $result           = '';
@@ -556,10 +556,10 @@ function wp_sms_render_quick_total_reply($number, $group_id = false)
     // print_r($count_num); 
     if ($count_num >= 1) {
         //foreach ($numbers as $item) {
-        $result .= sprintf('<a href="#TB_inline?&width=800&height=500&inlineId=wpsms-quick-total-reply" class="number thickbox js-replyModalToggle" name="Sent Subscriber " style="display: block" data-number="%1$s"><img class="quick-reply-icon" src="%2$s" alt="quick-reply-icon"> %1$s</a>', esc_html($count_num), $quick_reply_icon);
+        $result .= sprintf('<a href="#TB_inline?&width=800&height=500&inlineId=wpsms-quick-reply" class="number thickbox js-replyModalToggle" name="Sent Subscriber " style="display: block" data-number="%1$s"><img class="quick-reply-icon" src="%2$s" alt="quick-reply-icon"> %1$s</a>', esc_html($count_num), $quick_reply_icon);
         //}
     } else {
-        $result = sprintf('<a href="#TB_inline?&width=800&height=500&inlineId=wpsms-quick-total-reply" class="number thickbox js-replyModalToggle" name="Sent Subscriber" style="display: block" data-number="%1$s" data-group-id="%2$s"><img class="quick-reply-icon" src="%3$s" alt=""> %1$s</a>', esc_html($number), $group_id, $quick_reply_icon);
+        $result = sprintf('<a href="#TB_inline?&width=800&height=500&inlineId=wpsms-quick-reply" class="number thickbox js-replyModalToggle" name="Sent Subscriber" style="display: block" data-number="%1$s" data-group-id="%2$s"><img class="quick-reply-icon" src="%3$s" alt=""> %1$s</a>', esc_html($number), $group_id, $quick_reply_icon);
     }
 
   //  $result .= sprintf('<a href="#TB_inline?&width=500&height=500&inlineId=wpsms-quick-reply2" class="number thickbox js-replyModalToggle" name="Quick Reply" style="display: block" data-number="%1$s"><img class="quick-reply-icon" src="%2$s" alt="quick-reply-icon"> %1$s</a>', esc_html($count_num), $quick_reply_icon);

@@ -1,3 +1,6 @@
+
+
+
 <div id="wpsms-quick-reply" style="display: none">
     <div class="wpsms-sendsms__overlay">
         <svg class="wpsms-sendsms__overlay__spinner" xmlns="http://www.w3.org/2000/svg" style="margin:auto;background:0 0" width="200" height="200" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" display="block">
@@ -10,30 +13,40 @@
     <div class="wpsms-wrap wpsms-quick-reply-popup">
         <div class="wp-sms-popup-messages"></div>
     </div>
+        
 
+<!-- 여기서 문자 전송한 전체 구독자 테이블을 팝업으로 보여준다. -->
 
     <form method="post" class="js-wpSmsQuickReply" <?php if (isset($reload)) : echo 'data-reload=' . $reload; endif; ?>>
         <table>
             <tr>
                 <td style="padding-top: 10px;">
-                    <label for="wpsms-quick-reply-to"><?php _e('To', 'wp-sms'); ?></label>
-                    <input type="text" id="wpsms-quick-reply-to" class="js-wpSmsQuickReplyTo" name="wpsms_quick_reply_message" value="" readonly style="display: block; width: 100%"/>
+                    <label for="wpsms-quick-reply-to"><?php _e('To by Yong', 'wp-sms'); ?></label>
+                    <!-- <input type="text" id="wpsms-quick-reply-to" class="js-wpSmsQuickReplyTo" name="wpsms_quick_reply_message" value="" readonly style="display: block; width: 100%"/> -->
                 </td>
             </tr>
             <tr>
                 <td style="padding-top: 10px;">
-                    <label for="wpsms-quick-reply-message"><?php _e('Message', 'wp-sms-two-way'); ?></label>
-                    <textarea id="wpsms-quick-reply-message" class="js-wpSmsQuickReplyMessage" name="wpsms_quick_reply_message" cols="60" rows="10" wrap="hard" dir="auto" style="width: 100%"></textarea>
+                    <label for="wpsms-quick-reply-message"><?php _e('Message by Yong', 'wp-sms'); ?></label>
+                    <!-- <textarea id="wpsms-quick-reply-message" class="js-wpSmsQuickReplyMessage" name="wpsms_quick_reply_message" cols="60" rows="10" wrap="hard" dir="auto" style="width: 100%"></textarea> -->
                 </td>
             </tr>
 
         </table>
+        <?php /* $list_table->display(); */ ?>  //error 
     </form>
+     <!-- Subscribers class. -->
+       <!-- <?php  //require_once WP_SMS_DIR . 'includes/admin/subscribers/class-wpsms-subscribers.php'; -->
+
+        // $page = new Subscribers();
+        // $page->render_page();
+
+       ?> -->
     <div class="quick-reply-submit">
         <p class="submit" style="padding: 0;">
-            <input type="submit" class="button-primary" name="SendSMS" value="<?php _e('Reply', 'wp-sms'); ?>"/>
+            <input type="submit" class="button-primary" name="SendSMS" value="<?php _e('Close', 'wp-sms'); ?>"/>
         </p>
     </div>
 
-    //--
+
 </div>

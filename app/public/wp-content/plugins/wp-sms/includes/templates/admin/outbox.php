@@ -1,7 +1,7 @@
 <?php
 namespace WP_SMS;
 ?>
-<!-- SMS ->Outbox -> 우측에 테이블 보여주기  -->
+<!-- SMS >Outbox > 우측에 테이블 보여주기  -->
 <div class="wrap wpsms-wrap">
     <?php echo Helper::loadTemplate('header.php'); ?>
     <div class="wpsms-wrap__main">
