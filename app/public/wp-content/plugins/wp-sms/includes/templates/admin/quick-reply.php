@@ -106,10 +106,11 @@ $groups = Newsletter::getGroups();
         </p>
     </div>
 
-    <!-- <form id="subscribers-filter2" method="get"> -->
-            <!-- <?php //$_request_page = sanitize_text_field($_REQUEST['page']) ?> -->
-            <!-- <input type="hidden" name="page" value="<?php //echo esc_attr($_request_page); ?>"/> -->
+
+    <!-- <form id="outbox-filter2" method="get">
+            <?php //$_request_page = sanitize_text_field($_REQUEST['page']) ?>
+            <input type="hidden" name="page" value="<?php //echo esc_attr($_request_page); ?>"/>
             <?php //$list_table->search_box(__('Search', 'wp-sms'), 'search_id'); ?>
-             <!-- <?php // $list_table->display(); ?>  --> -->
+            <?php // $list_table->display(); ?>
     </form> -->
 </div>

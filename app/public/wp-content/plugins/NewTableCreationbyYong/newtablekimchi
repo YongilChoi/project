@@ -1,0 +1,50 @@
+
+<?php
+/**
+* kimchi table creation Plugin
+*
+* @author Yongil Choi.
+*
+* @wordpress-plugin
+* Plugin Name: kimchi table creation Plugin
+* Description: This plugin creates a new table in the database when initialized.
+* Author: Yongil Choi.
+* Author URI: https://www.sorynory.com
+* Version: 1.0
+* Requires PHP: 7.2
+*/
+
+// Create a class
+class KimchiTablePlugin {
+
+/**
+* Class Constructor
+* @author Yongil Choi
+* @param None
+* @return void
+*/
+
+public function __construct() {
+// This hook will run when the plugin is activated and call the activate function
+register_activation_hook(__FILE__, 'insert_kimchi_table_into_db');
+}
+
+
+/** This function inserts a new table into the db when the plugin is activated.
+* @author Adebola
+* @param None
+* @return void
+*/
+public function insert_kimchi_table_into_db(){
+
+  }
+}
+
+
+
+
+// Function that instantiates the class
+function kimchi_table_plugin() {
+new KimchiTablePlugin();
+}
+kimchi_table_plugin();
