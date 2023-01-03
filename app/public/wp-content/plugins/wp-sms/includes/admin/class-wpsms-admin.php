@@ -61,7 +61,7 @@ class Admin
         /**
          * Whole setting page's assets
          */
-        if (stristr($screen->id, 'wp-sms') or $screen->id == 'post' or $screen->id == 'edit-wpsms-command') {
+        if (stristr($screen->id, 'wp-sms') or $screen->base == 'post' or $screen->id == 'edit-wpsms-command') {
             wp_enqueue_style('wpsms-select2', WP_SMS_URL . 'assets/css/select2.min.css', true, WP_SMS_VERSION);
             wp_enqueue_script('wpsms-select2', WP_SMS_URL . 'assets/js/select2.min.js', true, WP_SMS_VERSION);
 
@@ -181,7 +181,7 @@ class Admin
 
         // Check GDPR compliance for Privacy menu
         if (isset($this->options['gdpr_compliance']) and $this->options['gdpr_compliance'] == 1) {
-            $hook_suffix['privacy'] = add_submenu_page('wp-sms', __('Privacy', 'wp-sms'), __('Privacy', 'wp-sms'), 'manage_options', 'wp-sms-subscribers-privacy', array($this, 'privacy_callback'), 5);
+            $hook_suffix['privacy'] = add_submenu_page('wp-sms', __('Privacy', 'wp-sms'), __('Privacy', 'wp-sms'), 'wpsms_setting', 'wp-sms-subscribers-privacy', array($this, 'privacy_callback'), 5);
         }
 
         add_submenu_page('wp-sms', __('Settings', 'wp-sms'), __('Settings', 'wp-sms'), 'wpsms_setting', 'wp-sms-settings', array($this->settings, 'render_settings'), 6);
