@@ -10,6 +10,8 @@ if (!class_exists('WP_List_Table')) {
     require_once(ABSPATH . 'wp-admin/includes/class-wp-list-table.php');
 }
 
+include_once WP_SMS_DIR . 'includes/admin/subscribers/class-wpsms-subscribers-table.php';
+
 class Outbox_List_Table extends \WP_List_Table
 {
 

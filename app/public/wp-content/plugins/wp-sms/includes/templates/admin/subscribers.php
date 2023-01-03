@@ -5,7 +5,7 @@ $groups = Newsletter::getGroups();
 ?>
 
 <div class="wrap wpsms-wrap">
-    <?php echo Helper::loadTemplate('header.php'); ?>
+    <?php //echo Helper::loadTemplate('header.php'); ?>
     <div class="wpsms-wrap__main">
         <h2><?php _e('Subscribers', 'wp-sms'); ?></h2>
         <?php echo Helper::loadTemplate('admin/quick-reply.php'); ?>
@@ -36,7 +36,7 @@ $groups = Newsletter::getGroups();
             <?php $_request_page = sanitize_text_field($_REQUEST['page']) ?>
             <input type="hidden" name="page" value="<?php echo esc_attr($_request_page); ?>"/>
             <?php $list_table->search_box(__('Search', 'wp-sms'), 'search_id'); ?>
-            <?php $list_table->display(); ?>
+             <?php $list_table->display(); ?> 
         </form>
     </div>
 </div>
